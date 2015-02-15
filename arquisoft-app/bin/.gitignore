@@ -2,7 +2,7 @@
 /IntegrationTest$1.class
 /IntegrationTest.class
 /application.conf
-/controllers/
+/controllers
+/models
 /routes
-/views/
-/models/
+/views
