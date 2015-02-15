@@ -9,7 +9,7 @@ public class CatalizadorAsociado {
   
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private long id;
+    public long id;
     private String actividadFisica;
     private String estadoTiempo;
     
