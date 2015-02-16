@@ -9,31 +9,55 @@ public class Alimento {
   
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    public long id;
+    public Long id;
     private String nombre;
     private String tipo;
     private int cantidad;
     
+    /**
+     * Metodo que define el nombre del alimento
+     * @return nombre 
+     */
 	public String getNombre() {
 		return nombre;
 	}
 	
+	/**
+	 * Metodo que retorna el nombre del alimento
+	 * @param nombre
+	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 	
+	/**
+	 * Metodo que devuelve el tipo del alimento
+	 * @return tipo
+	 */
 	public String getTipo() {
 		return tipo;
 	}
 	
+	/**
+	 * Metodo que define el tipo del alimento
+	 * @param tipo
+	 */
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
 	
+	/**
+	 * Metodo que da la cantidad que ingerio del almiento
+	 * @return cantidad
+	 */
 	public int getCantidad() {
 		return cantidad;
 	}
 	
+	/**
+	 * Metodo que registra la cantidad de alimento que comio
+	 * @param cantidad
+	 */
 	public void setCantidad(int cantidad) {
 		this.cantidad = cantidad;
 	}
