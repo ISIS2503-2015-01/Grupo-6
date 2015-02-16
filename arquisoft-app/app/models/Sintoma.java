@@ -8,7 +8,25 @@ public class Sintoma {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    public long id;
-    public String descripcion;
+    public Long id;
+   	private String descripcion;
+   	
+   	/**
+   	 * Metodo que retorna la descripcion del sintoma
+   	 * @return descripcion
+   	 */
+	public String getDescripcion() {
+		return descripcion;
+	}
+	
+	/**
+	 * Metodo que registra la descripcion del sintoma
+	 * @param descripcion
+	 */
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+   	
+   	
     
 }
