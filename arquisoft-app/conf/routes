@@ -5,15 +5,5 @@
 # Home page
 GET     /                           controllers.Application.index()
 
-# Ver una lista de todos episodios de los pacientes
-GET		/paciente/:id/episodios			controllers.DoctorController.getEpisodios(id: Long)
-
-# Ver la informacion de un episodio particular
-GET		/episodio/:id					controllers.DoctorController.getEpisodio(id: Long)
-
-# Ver una lista de los episodios de un paciente en un rango de fecha
-GET		/paciente/:id/episodiosfechas	controllers.DoctorController.getEpisodiosPorFecha(id: Long, date1: Date, date2: Date)
-
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
-

@@ -7,40 +7,28 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Doctor {
 
+    public static final int MASCULINO = 1;
+    public static final int FEMENINO = 1;
+
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    public Long id;
+    public long id;
     private String nombre;
     private String apellido;
     
-    /**
-     * Metodo que retorna el nombre del doctor
-     * @return nombre
-     */
+    
 	public String getNombre() {
 		return nombre;
 	}
 	
-	/**
-	 * Metodo que registra el nombre del doctor
-	 * @param nombre
-	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 	
-	/**
-	 * Metodo que retorna el apellido del doctor
-	 * @return apellido
-	 */
 	public String getApellido() {
 		return apellido;
 	}
 	
-	/**
-	 * Metodo que registra el apellido del doctor
-	 * @param apellido
-	 */
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
