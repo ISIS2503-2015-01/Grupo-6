@@ -26,7 +26,7 @@ public class DoctorController extends Controller
      * @param date2
      * @return
      */
-    public static Result getEpisodiosPorFecha(Long id, Date date1, Date date2)
+    public static Result getEpisodiosPorFecha(Long id, String date1, String date2)
     {
         return null;
     }
