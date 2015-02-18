@@ -17,6 +17,27 @@ public class Paciente {
     private String email;
     
     /**
+     * Constructor Paciente
+     * @param id
+     * @param nombren
+     * @param napellido
+     * @param fechaNa
+     * @param gen
+     * @param tel
+     * @param mail
+     */
+    public Paciente(long id, String nombren, String napellido, Date fechaNa, String gen, int tel, String mail)
+    {
+    	idDocumento = id;
+    	nombre = nombren;
+    	apellido = napellido;
+    	fechaNacimiento = fechaNa;
+    	genero = gen;
+    	telefono = tel;
+    	email = mail;
+    }
+    
+    /**
      * Metodo que retorna el documento de identidad del paciente	
      * @param idDocumento
      * @return idDocumento

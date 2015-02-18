@@ -17,3 +17,19 @@ GET		/paciente/:id/episodiosfechas/:date1/:date2	controllers.DoctorController.ge
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
+############################################################################################################################################################
+
+#Crear un paciente
+POST    	/paciente					controllers.PacienteController.createPaciente()
+
+#Ver lista de pacientes
+GET		/paciente					controllers.PacienteController.getPacientes()
+
+#Ver paciente por id
+GET		/paciente/:id					controllers.PacienteController.getPaciente(id: Long)
+
+#Actualizar a un paciente
+PUT		/paciente/:id					controllers.PacienteController.updatePaciente(id: Long)
+
+#Ver lista de pacientes
+DELETE		/paciente/:id					controllers.PacienteController.deletePaciente(id: Long)
