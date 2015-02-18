@@ -12,7 +12,7 @@ GET		/paciente/:id/episodios			controllers.DoctorController.getEpisodios(id: Lon
 GET		/episodio/:id					controllers.DoctorController.getEpisodio(id: Long)
 
 # Ver una lista de los episodios de un paciente en un rango de fecha
-GET		/paciente/:id/episodiosfechas	controllers.DoctorController.getEpisodiosPorFecha(id:Long,date1: String,date2:String)
+GET		/paciente/:id/episodiosfechas/:date1/:date2	controllers.DoctorController.getEpisodiosPorFecha(id: Long, date1: String, date2: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

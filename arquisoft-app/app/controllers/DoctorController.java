@@ -1,9 +1,11 @@
 package controllers;
 
-import java.util.Date;
-import javax.xml.transform.Result;
-import play.mvc.*;
-//Chicaiza 15.02.2015
+
+import play.mvc.Controller;
+import play.mvc.Result;
+import views.html.index;
+
+
 public class DoctorController extends Controller 
 {
 	//
@@ -15,10 +17,12 @@ public class DoctorController extends Controller
      * @param id
      * @return
      */
-    public static Result getEpisodios(Long id)
+    public static Result getEpisodios(long id)
     {
-        return null;
+    	 return ok(index.render("Episodios"));
     }
+    
+
     /**
      * Metodo que retorna todos los episodios de un paciente a partir de su id, en un rango de fechas
      * @param id
@@ -28,7 +32,7 @@ public class DoctorController extends Controller
      */
     public static Result getEpisodiosPorFecha(Long id, String date1, String date2)
     {
-        return null;
+    	 return (Result) ok(index.render("episodiosPorFecha"));
     }
     /**
      * Retorna la informacion asociada a un episodio a partir su id
@@ -37,7 +41,7 @@ public class DoctorController extends Controller
      */
     public static Result getEpisodio(Long id)
     {
-        return null;
+    	 return (Result) ok(index.render("episodio"));
     }
     //
     //---------------------------------------||
