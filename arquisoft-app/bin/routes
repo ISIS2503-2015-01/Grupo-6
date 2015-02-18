@@ -1,9 +1,14 @@
 # Routes
 # This file defines all application routes (Higher priority routes first)
+
 # ~~~~
 
 # Home page
 GET     /                           controllers.Application.index()
+
+
+############################################################################################################################################################
+# ~~~~ Rutas primera entrega
 
 # Ver una lista de todos episodios de los pacientes
 GET		/paciente/:id/episodios			controllers.DoctorController.getEpisodios(id: Long)
@@ -17,3 +22,38 @@ GET		/paciente/:id/episodiosfechas/:date1/:date2	controllers.DoctorController.ge
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
+############################################################################################################################################################
+# ~~~~ Rutas Paciente
+
+#Crear un paciente
+POST    	/paciente					controllers.PacienteController.createPaciente()
+
+#Ver lista de pacientes
+GET		/paciente						controllers.PacienteController.getPacientes()
+
+#Ver paciente por id
+GET		/paciente/:id					controllers.PacienteController.getPaciente(id: Long)
+
+#Actualizar a un paciente
+PUT		/paciente/:id					controllers.PacienteController.updatePaciente(id: Long)
+
+#Ver lista de pacientes
+DELETE		/paciente/:id				controllers.PacienteController.deletePaciente(id: Long)
+
+############################################################################################################################################################
+# ~~~~ Rutas Doctor
+
+#Crear un doctor
+POST    	/doctor						controllers.DoctorController.createDoctor()
+
+#Ver lista de doctores
+GET			/doctor						controllers.DoctorController.getDoctores()
+
+#Ver doctor por id
+GET			/doctor/:id					controllers.DoctorController.getDoctor(id: Long)
+
+#Actualizar a un doctor
+PUT			/doctor/:id					controllers.DoctorController.updateDoctor(id: Long)
+
+#Ver lista de doctor
+DELETE		/doctor/:id					controllers.PacienteController.deletePaciente(id: Long)
