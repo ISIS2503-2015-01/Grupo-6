@@ -51,7 +51,7 @@ public class DoctorController extends Controller
     //---------------------------------------||
     //
 
-    public static Result createPaciente()
+    public static Result createDoctor()
 	{
 //		Paciente newUser = Json.fromJson(request().body().asJson(), Paciente.class);
 		return ok(index.render("createPacientes"));
@@ -72,7 +72,7 @@ public class DoctorController extends Controller
 	    return ok(index.render("getDoctor"));
 	}
 
-	public static Result updateDcotor(Long id)
+	public static Result updateDoctor(Long id)
 	{
 //	    User user = Json.fromJson(request().body().asJson(), User.class);
 //	    User updated = Database.updateUser(id, user);
