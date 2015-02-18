@@ -10,14 +10,7 @@ GET     /                           controllers.Application.index()
 ############################################################################################################################################################
 # ~~~~ Rutas primera entrega
 
-# Ver una lista de todos episodios de los pacientes
-GET		/paciente/:id/episodios			controllers.DoctorController.getEpisodios(id: Long)
 
-# Ver la informacion de un episodio particular
-GET		/episodio/:id					controllers.DoctorController.getEpisodio(id: Long)
-
-# Ver una lista de los episodios de un paciente en un rango de fecha
-GET		/paciente/:id/episodiosfechas/:date1/:date2	controllers.DoctorController.getEpisodiosPorFecha(id: Long, date1: String, date2: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
@@ -57,3 +50,21 @@ PUT			/doctor/:id					controllers.DoctorController.updateDoctor(id: Long)
 
 #Ver lista de doctor
 DELETE		/doctor/:id					controllers.PacienteController.deletePaciente(id: Long)
+
+############################################################################################################################################################
+# ~~~~ Rutas Episodio
+
+#Crear un episodio
+POST    	/episodio					controllers.EpisodioController.createEpisodio()
+
+#Ver lista de episodio
+GET		/episodio						controllers.EpisodioController.getEpisodio()
+
+#Ver episodio por id
+GET		/episodio/:id					controllers.EpisodioController.getEpisodio(id: Long)
+
+#Actualizar a un episodio
+PUT		/episodio/:id					controllers.EpisodioController.updateEpisodio(id: Long)
+
+#Ver lista de episodio
+DELETE		/episodio/:id				controllers.EpisodioController.deleteEpisodio(id: Long)

@@ -57,8 +57,8 @@ DELETE		/doctor/:id					controllers.PacienteController.deletePaciente(id: Long)
 #Crear un episodio
 POST    	/episodio					controllers.EpisodioController.createEpisodio()
 
-#Ver lista de episodio
-GET		/episodio						controllers.EpisodioController.getEpisodio()
+#Ver lista de episodios
+GET		/episodio						controllers.EpisodioController.getEpisodios()
 
 #Ver episodio por id
 GET		/episodio/:id					controllers.EpisodioController.getEpisodio(id: Long)
