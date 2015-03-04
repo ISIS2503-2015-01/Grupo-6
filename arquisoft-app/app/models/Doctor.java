@@ -13,6 +13,7 @@ public class Doctor {
     private String nombre;
     private String apellido;
     
+    public Doctor(){}
     /**
      * Metodo que retorna el nombre del doctor
      * @return nombre

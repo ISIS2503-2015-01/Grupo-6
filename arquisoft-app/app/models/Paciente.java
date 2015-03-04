@@ -16,6 +16,9 @@ public class Paciente {
     private int telefono;
     private String email;
     
+
+    public Paciente(){}
+    
     /**
      * Constructor Paciente
      * @param id
@@ -26,15 +29,18 @@ public class Paciente {
      * @param tel
      * @param mail
      */
-    public Paciente(long id, String nombren, String napellido, Date fechaNa, String gen, int tel, String mail)
+    public static Paciente create(long id, String nombren, String napellido, Date fechaNa, String gen, int tel, String mail)
     {
-    	idDocumento = id;
-    	nombre = nombren;
-    	apellido = napellido;
-    	fechaNacimiento = fechaNa;
-    	genero = gen;
-    	telefono = tel;
-    	email = mail;
+    	Paciente p = new Paciente();
+    	p.idDocumento = id;
+    	p.nombre = nombren;
+    	p.apellido = napellido;
+    	p.fechaNacimiento = fechaNa;
+    	p.genero = gen;
+    	p.telefono = tel;
+    	p.email = mail;
+    	
+    	return p;
     }
     
     /**

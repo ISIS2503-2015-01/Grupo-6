@@ -14,6 +14,8 @@ public class Alimento {
     private String tipo;
     private int cantidad;
     
+    
+    public Alimento(){}
     /**
      * Metodo que define el nombre del alimento
      * @return nombre 
@@ -22,7 +24,7 @@ public class Alimento {
 		return nombre;
 	}
 	
-	/**
+	/*
 	 * Metodo que retorna el nombre del alimento
 	 * @param nombre
 	 */

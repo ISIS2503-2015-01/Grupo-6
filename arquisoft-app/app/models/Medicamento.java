@@ -13,6 +13,8 @@ public class Medicamento {
     private double dosis; 
     private int frecuencia;
     
+    
+    public Medicamento(){}
     /**
      * Metodo que devuelve el nombre del medicamento
      * @return nombre

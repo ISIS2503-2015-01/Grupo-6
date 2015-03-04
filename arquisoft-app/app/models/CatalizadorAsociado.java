@@ -13,6 +13,8 @@ public class CatalizadorAsociado {
     private String actividadFisica;
     private String estadoTiempo;
     
+    
+    public CatalizadorAsociado(){}
     /**
      * Retorna la actividad fisica del paciente durante el episodio
      * @return actividadFisica

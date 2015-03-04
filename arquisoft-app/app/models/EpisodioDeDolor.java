@@ -1,7 +1,9 @@
 package models;
+import java.sql.Date;
+
 import javax.persistence.*;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import java.util.Date;
 
 @Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
@@ -15,6 +17,9 @@ public class EpisodioDeDolor {
     private String intensidad;
     private int horasDeSueno;
     private String lugar;
+    
+    
+    public EpisodioDeDolor(){}
     
     /**
      * Metodo que retorna el anio y dia del suceso del episodio

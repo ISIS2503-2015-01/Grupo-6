@@ -11,6 +11,9 @@ public class Sintoma {
     public Long id;
    	private String descripcion;
    	
+   	
+   	public Sintoma(){}
+   	
    	/**
    	 * Metodo que retorna la descripcion del sintoma
    	 * @return descripcion
