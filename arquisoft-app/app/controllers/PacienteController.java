@@ -2,6 +2,9 @@ package controllers;
 
 import java.util.List;
 
+import org.h2.engine.Database;
+import org.h2.engine.User;
+
 import models.Paciente;
 import play.libs.Json;
 import play.mvc.Controller;
@@ -19,7 +22,7 @@ public class PacienteController extends Controller
 		
 	public static Result getPacientes()
 	{
-//	    List<Paciente> users = Database.getUsers();
+//	    List<Paciente> users = Database.;
 //	    return ok(Json.toJson(users));
 	    return ok(index.render("getPacientes"));
 	}
