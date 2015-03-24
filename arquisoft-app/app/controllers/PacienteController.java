@@ -1,30 +1,42 @@
 package controllers;
 
+import java.util.Date;
 import java.util.List;
 
-import org.h2.engine.Database;
-import org.h2.engine.User;
+import javax.persistence.Query;
 
-import models.Paciente;
+import model.Paciente;
+import play.data.Form;
+import play.db.jpa.*;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
+import play.mvc.Results;
 import views.html.index;
 
 public class PacienteController extends Controller
 {
+	static Form<Paciente> pacienteForm = Form.form(Paciente.class);
+	
+	
+	@Transactional
 	public static Result createPaciente()
-	{
+	{	
+		
+		Paciente n = new Paciente(null, null, null, null, 1, null);
+		JPA.em().persist(n);
+//		"wareverson", "junior", new Date(),"asgwe", 1,"warever@hotmail"
 //		Paciente newUser = Json.fromJson(request().body().asJson(), Paciente.class);
-		return ok(index.render("createPacientes"));
+		return Results.created();
 		
 	}
-		
+	
+	@Transactional
 	public static Result getPacientes()
 	{
-//	    List<Paciente> users = Database.;
-//	    return ok(Json.toJson(users));
-	    return ok(index.render("getPacientes"));
+		Query q = JPA.em().createQuery("SELECT p FROM Paciente p");
+		List<Paciente> lista = q.getResultList();
+		return Results.ok(Json.toJson(lista));
 	}
 
 	public static Result getPaciente(Long id)

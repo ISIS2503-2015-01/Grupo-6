@@ -4,7 +4,13 @@
              version="2.0">
 
     <persistence-unit name="defaultPersistenceUnit" transaction-type="RESOURCE_LOCAL">
-        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <non-jta-data-source>DefaultDS</non-jta-data-source>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+        </properties>
+  <!--       <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
            <non-jta-data-source>DefaultDS</non-jta-data-source>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
@@ -12,9 +18,9 @@
       <property name="javax.persistence.jdbc.user" value="bjtembzrqukklv"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
       <property name="javax.persistence.jdbc.password" value="duKSJM_FPX6iJ0RNLVN4RHkLIz"/>
-      <!--<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>-->
+     <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
       <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
       <property name="eclipselink.logging.level" value="FINE"/>
-    </properties>    
+    </properties> -->   
     </persistence-unit>
 </persistence>

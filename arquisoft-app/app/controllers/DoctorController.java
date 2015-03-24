@@ -2,7 +2,7 @@ package controllers;
 
 import java.util.List;
 
-import models.Paciente;
+import model.Paciente;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;

@@ -1,0 +1,169 @@
+@import 'vars';
+@import 'mixins';
+
+/*
+	Scalar by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	body, input, select, textarea {
+		font-size: 12pt;
+	}
+
+	blockquote {
+		&.testimonial {
+			margin-top: 0;
+
+			p {
+				max-width: 30em;
+			}
+		}
+	}
+
+/* Wrapper */
+
+	.wrapper {
+		&.split {
+			.primary {
+				@include wrapper-padding(3em);
+				float: none;
+				width: 100%;
+			}
+
+			.secondary {
+				float: none;
+				width: 100%;
+
+				& > section {
+					@include wrapper-padding(3em, 3em, 3em);
+					left: -3em;
+					width: calc(100% + 6em);
+
+					&:before {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+/* Header */
+
+	#skel-layers-wrapper {
+		padding-top: 3em;
+	}
+
+	#header {
+		height: 3em;
+		line-height: 3em;
+
+		.container {
+			width: 100% !important;
+		}
+
+		h1 {
+			margin-left: 1em;
+		}
+
+		nav {
+			display: none;
+		}
+	}
+
+/* Banner */
+
+	#banner {
+		@include wrapper-padding(8em);
+
+		h2 {
+			font-size: 2em;
+		}
+	}
+
+/* Layers */
+
+	#navButton {
+		.toggle {
+			@include icon;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+
+			&:before {
+				background: $color-accent1-bg;
+				color: $color-accent1-fg;
+				content: '\f0c9';
+				display: block;
+				font-size: 16px;
+				height: 3em;
+				line-height: 3em;
+				position: absolute;
+				right: 0;
+				text-align: center;
+				top: 0;
+				width: 4em;
+			}
+		}
+	}
+
+	#navPanel {
+		@include vendorize-value(
+			'background-image',
+			(
+				'linear-gradient(top, rgba(0,0,0,0.25), rgba(0,0,0,0.25))',
+				'linear-gradient(top, rgba(0,0,0,0) 75%, rgba(0,0,0,0.1))'
+			),
+			comma
+		);
+		background-color: $color-accent2-bg;
+		color: $color-accent2-fg;
+
+		.link {
+			box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.1);
+			color: $color-accent2-fg;
+			display: block;
+			font-family: $font-family-heading;
+			font-size: 0.8em;
+			font-weight: $font-weight-heading;
+			letter-spacing: 0.05em;
+			line-height: 4em;
+			padding: 0 1.5em;
+			text-decoration: none;
+			text-transform: uppercase;
+
+			&:first-child {
+				box-shadow: none;
+			}
+
+			&.depth-0 {
+				color: $color-accent2-fg-bold;
+			}
+
+			.indent-1 { display: inline-block; width: 1.25em; }
+			.indent-2 { display: inline-block; width: 2.5em; }
+			.indent-3 { display: inline-block; width: 3.75em; }
+			.indent-4 { display: inline-block; width: 5em; }
+			.indent-5 { display: inline-block; width: 6.25em; }
+		}
+	}
+
+/* Landing */
+
+	body.landing {
+		#banner {
+			text-align: center;
+		}
+
+		#one {
+			text-align: center;
+		}
+
+		#two {
+			text-align: center;
+		}
+	}

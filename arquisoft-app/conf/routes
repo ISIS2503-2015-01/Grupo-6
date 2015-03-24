@@ -19,7 +19,7 @@ GET     /assets/*file               controllers.Assets.at(path="/public", file)
 # ~~~~ Rutas Paciente
 
 #Crear un paciente
-POST    	/paciente					controllers.PacienteController.createPaciente()
+GET  	/crearpaciente					controllers.PacienteController.createPaciente()
 
 #Ver lista de pacientes
 GET		/paciente						controllers.PacienteController.getPacientes()
@@ -55,7 +55,7 @@ DELETE		/doctor/:id					controllers.PacienteController.deletePaciente(id: Long)
 # ~~~~ Rutas Episodio
 
 #Crear un episodio
-POST    	/episodio					controllers.EpisodioController.createEpisodio()
+POST    /episodio					controllers.EpisodioController.createEpisodio()
 
 #Ver lista de episodios
 GET		/episodio						controllers.EpisodioController.getEpisodios()
@@ -67,4 +67,4 @@ GET		/episodio/:id					controllers.EpisodioController.getEpisodio(id: Long)
 PUT		/episodio/:id					controllers.EpisodioController.updateEpisodio(id: Long)
 
 #Ver lista de episodio
-DELETE		/episodio/:id				controllers.EpisodioController.deleteEpisodio(id: Long)
+DELETE	/episodio/:id				controllers.EpisodioController.deleteEpisodio(id: Long)

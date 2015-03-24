@@ -1,0 +1,162 @@
+@import 'vars';
+@import 'mixins';
+
+/*
+	Scalar by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	body, input, select, textarea {
+		font-size: 12pt;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		br {
+			display: none;
+		}
+	}
+
+	h2 {
+		font-size: 1.35em;
+	}
+
+	h3 {
+		font-size: 1.1em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+
+/* Section/Article */
+
+	header {
+		p {
+			br {
+				display: none;
+			}
+		}
+
+		h2 + p {
+			font-size: 1.1em;
+		}
+
+		h3 + p {
+			font-size: 1em;
+		}
+	}
+
+/* Icon */
+
+	.icon {
+		&.major {
+			height: 3.75em;
+			line-height: 3.75em;
+			width: 3.75em;
+
+			&:before {
+				font-size: 1.75em;
+			}
+		}
+	}
+
+/* Image */
+
+	.image {
+		&.style1 {
+			border-width: 0.75em;
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+/* List */
+
+	ul {
+		&.major-icons {
+			li {
+				padding-right: 1.5em;
+
+				.icon {
+					font-size: 0.5em;
+				}
+			}
+		}
+	}
+
+/* Feature */
+
+	.feature {
+		padding-left: 5em;
+
+		&:before {
+			left: 3.75em;
+		}
+
+		.icon {
+			&.major {
+				font-size: 0.5em;
+			}
+		}
+	}
+
+/* Tree */
+
+	.tree {
+		margin: 0;
+		padding: 0;
+
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+
+/* Header */
+
+	#skel-layers-wrapper {
+		padding-top: 44px;
+	}
+
+	#header {
+		height: 44px;
+		line-height: 44px;
+
+		h1 {
+			font-size: 0.9em;
+		}
+	}
+
+/* Banner */
+
+	#banner {
+		@include wrapper-padding(4em);
+
+		h2 {
+			font-size: 1.5em;
+		}
+	}
+
+/* Layers */
+
+	#navButton {
+		.toggle {
+			&:before {
+				height: 44px;
+				line-height: 44px;
+				width: 44px;
+			}
+		}
+	}
+
+	#navPanel {
+		.link {
+			line-height: 44px;
+			padding: 0 1.25em;
+		}
+	}
