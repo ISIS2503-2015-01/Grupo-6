@@ -37,7 +37,7 @@ public class Paciente {
     private Collection<EpisodioDeDolor> episodioDeDolor = new ArrayList<EpisodioDeDolor>();
     
 
-
+    protected Paciente(){}
     
     /**
      * Constructor Paciente

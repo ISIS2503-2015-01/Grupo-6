@@ -10,15 +10,40 @@ public class Doctor {
 
     @Id
     public Long id;
+    
     private String nombre;
+    
     private String apellido;
     
+    protected Doctor(){}
+    /**
+     * Constructor Doctor
+     * @param id
+     * @param nombre
+     * @param apellido
+     */
     public Doctor(Long id, String nombre, String apellido)
     {
     	this.id = id;
     	this.nombre = nombre;
     	this.apellido = apellido;
     }
+    /**
+     * Metodo que retorna el nombre del doctor
+     * @return nombre
+     */
+	public Long getId() {
+		return id;
+	}
+	
+	/**
+	 * Metodo que registra el nombre del doctor
+	 * @param nombre
+	 */
+	public void setId(Long id) {
+		this.id = id;
+	}
+	
     /**
      * Metodo que retorna el nombre del doctor
      * @return nombre

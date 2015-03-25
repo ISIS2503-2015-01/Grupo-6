@@ -28,13 +28,13 @@ public class DoctorController extends Controller
 	{
 
     	JsonNode web = Controller.request().body().asJson(); 	
-        Long documento = Long.parseLong(web.findPath("documento").asText());
+        String documento = web.findPath("documento").asText();
         String nombre = web.findPath("nombre").asText();
         String apellido = web.findPath("apellido").asText();
         try
         {
-
-            Doctor doctor = new Doctor(documento, nombre, apellido);
+        	Long id =  Long.parseLong(documento);
+            Doctor doctor = new Doctor(id, nombre, apellido);
             JPA.em().persist(doctor);
 
         } catch (Exception e) {
@@ -48,7 +48,7 @@ public class DoctorController extends Controller
 	public static Result getDoctores()
 	{
 		
-		Query q = JPA.em().createQuery("SELECT p FROM Doctor p");
+		Query q = JPA.em().createQuery("SELECT d FROM Doctor d");
 		List<Paciente> lista = q.getResultList();
 		return Results.ok(Json.toJson(lista));
 		

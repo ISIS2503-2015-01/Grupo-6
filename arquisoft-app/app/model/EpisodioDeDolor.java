@@ -32,6 +32,7 @@ public class EpisodioDeDolor {
     @OneToMany(cascade=CascadeType.ALL,mappedBy="episodioDeDolorId")
     private Collection<Medicamento> medicamento = new ArrayList<Medicamento>();
 
+    protected EpisodioDeDolor(){}
 
 	public EpisodioDeDolor(Date fecha, String intensidad, int horasDeSueno, String lugar, Long pacienteId){
 		
