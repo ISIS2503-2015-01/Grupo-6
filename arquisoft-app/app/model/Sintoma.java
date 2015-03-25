@@ -1,5 +1,6 @@
 package model;
 import javax.persistence.*;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
@@ -10,9 +11,14 @@ public class Sintoma {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     public Long id;
    	private String descripcion;
+   	private Long episodioDeDolorId;
    	
    	
-   	public Sintoma(){}
+   	public Sintoma(String descripcion, Long episodioDeDolorId){
+   		
+   		this.descripcion = descripcion;
+   		this.episodioDeDolorId = episodioDeDolorId;
+   	}
    	
    	/**
    	 * Metodo que retorna la descripcion del sintoma

@@ -19,7 +19,7 @@ GET     /assets/*file               controllers.Assets.at(path="/public", file)
 # ~~~~ Rutas Paciente
 
 #Crear un paciente
-GET  	/crearpaciente					controllers.PacienteController.createPaciente()
+POST  	/crearpaciente					controllers.PacienteController.createPaciente()
 
 #Ver lista de pacientes
 GET		/paciente						controllers.PacienteController.getPacientes()
@@ -28,10 +28,10 @@ GET		/paciente						controllers.PacienteController.getPacientes()
 GET		/paciente/:id					controllers.PacienteController.getPaciente(id: Long)
 
 #Actualizar a un paciente
-PUT		/paciente/:id					controllers.PacienteController.updatePaciente(id: Long)
+#PUT		/paciente/:id					controllers.PacienteController.updatePaciente(id: Long)
 
 #Ver lista de pacientes
-DELETE		/paciente/:id				controllers.PacienteController.deletePaciente(id: Long)
+#DELETE		/paciente/:id				controllers.PacienteController.deletePaciente(id: Long)
 
 ############################################################################################################################################################
 # ~~~~ Rutas Doctor
@@ -49,7 +49,7 @@ GET			/doctor/:id					controllers.DoctorController.getDoctor(id: Long)
 PUT			/doctor/:id					controllers.DoctorController.updateDoctor(id: Long)
 
 #Ver lista de doctor
-DELETE		/doctor/:id					controllers.PacienteController.deletePaciente(id: Long)
+DELETE		/doctor/:id					controllers.DoctorController.deleteDoctor(id: Long)
 
 ############################################################################################################################################################
 # ~~~~ Rutas Episodio
@@ -58,13 +58,13 @@ DELETE		/doctor/:id					controllers.PacienteController.deletePaciente(id: Long)
 POST    /episodio					controllers.EpisodioController.createEpisodio()
 
 #Ver lista de episodios
-GET		/episodio						controllers.EpisodioController.getEpisodios()
+GET		/paciente/:id/episodio		controllers.EpisodioController.getEpisodios(id: Long)
 
 #Ver episodio por id
-GET		/episodio/:id					controllers.EpisodioController.getEpisodio(id: Long)
+GET		/paciente/:id1/episodio/:id2	controllers.EpisodioController.getEpisodio(id2: Long, id1: Long)
 
 #Actualizar a un episodio
-PUT		/episodio/:id					controllers.EpisodioController.updateEpisodio(id: Long)
+PUT		/episodio/:id				controllers.EpisodioController.updateEpisodio(id: Long)
 
 #Ver lista de episodio
 DELETE	/episodio/:id				controllers.EpisodioController.deleteEpisodio(id: Long)

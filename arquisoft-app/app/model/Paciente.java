@@ -5,8 +5,12 @@ import play.db.ebean.Model.Finder;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 @Entity
 @Table(name="Paciente")
@@ -29,8 +33,8 @@ public class Paciente {
     @Column(name="email")
     private String email;
     
-    @OneToMany
-    private List<EpisodioDeDolor> episodioDeDolor;
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="pacienteId")
+    private Collection<EpisodioDeDolor> episodioDeDolor = new ArrayList<EpisodioDeDolor>();
     
 
 
@@ -51,9 +55,9 @@ public class Paciente {
      * @param mail 
      * @param mail
      */
-    public Paciente (String nombren, String napellido, Date fechaNa, String gen, int tel, String mail)
+    public Paciente (Long idn, String nombren, String napellido, Date fechaNa, String gen, int tel, String mail)
     {
-    	
+    	id = idn;
     	nombre = nombren;
     	apellido = napellido;
     	fechaNacimiento = fechaNa;

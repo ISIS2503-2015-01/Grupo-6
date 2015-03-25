@@ -13,9 +13,18 @@ public class Alimento {
     private String nombre;
     private String tipo;
     private int cantidad;
+    private Long catalizadorAsociadoId;
     
+    public Alimento(String nombre, String tipo, int cantidad, Long catalizadorAsociadoId){
     
-    public Alimento(){}
+
+    	this.nombre = nombre;
+    	this.tipo = tipo;
+    	this.cantidad = cantidad;
+    	this.catalizadorAsociadoId = catalizadorAsociadoId;
+    	
+    }
+    
     /**
      * Metodo que define el nombre del alimento
      * @return nombre 

@@ -1,5 +1,9 @@
 package model;
-import java.sql.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
 
 import javax.persistence.*;
 
@@ -9,50 +13,52 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class EpisodioDeDolor {
 
-    @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    public Long id;
-    private Date fecha;
-    private Date hora;
-    private String intensidad;
-    private int horasDeSueno;
-    private String lugar;
+	@Id
+	@GeneratedValue(strategy= GenerationType.AUTO)
+	public Long id;
+
+	private Date fecha;
+	private String intensidad;
+	private int horasDeSueno;
+	private String lugar;
+	private Long pacienteId;
+	
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="episodioDeDolorId")
+    private Collection<CatalizadorAsociado> catalalizadoAsociado = new ArrayList<CatalizadorAsociado>();
     
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="episodioDeDolorId")
+    private Collection<Sintoma> sintoma = new ArrayList<Sintoma>();
     
-    public EpisodioDeDolor(){}
-    
-    /**
-     * Metodo que retorna el anio y dia del suceso del episodio
-     * @return fecha
-     */
+    @OneToMany(cascade=CascadeType.ALL,mappedBy="episodioDeDolorId")
+    private Collection<Medicamento> medicamento = new ArrayList<Medicamento>();
+
+
+	public EpisodioDeDolor(Date fecha, String intensidad, int horasDeSueno, String lugar, Long pacienteId){
+		
+		this.fecha = fecha;
+		this.intensidad = intensidad;
+		this.horasDeSueno = horasDeSueno;
+		this.lugar = lugar;
+		this.pacienteId = pacienteId;
+		
+	}
+
+	/**
+	 * Metodo que retorna el anio y dia del suceso del episodio
+	 * @return fecha
+	 */
 	public Date getFecha() {
 		return fecha;
 	}
-	
+
 	/**
 	 * Metodo que registra la fecha del episodio
 	 * @param fecha
 	 */
 	public void setFecha(Date fecha) {
-		this.fecha = fecha;
+		this.fecha = new Date();
 	}
-	
-	/**
-	 * Metodo que retorna la hora en que sucedio el episodio
-	 * @return hora
-	 */
-	public Date getHora() {
-		return hora;
-	}
-	
-	/**
-	 * Metodo que registra la hora en que sucedio el episodio
-	 * @param hora
-	 */
-	public void setHora(Date hora) {
-		this.hora = hora;
-	}
-	
+
 	/**
 	 * Metodo que retorna la intensidad del episodio
 	 * @return intensidad
@@ -60,7 +66,7 @@ public class EpisodioDeDolor {
 	public String getIntensidad() {
 		return intensidad;
 	}
-	
+
 	/**
 	 * Metodo que registra la intensidad del episodio
 	 * @param intensidad
@@ -68,7 +74,7 @@ public class EpisodioDeDolor {
 	public void setIntensidad(String intensidad) {
 		this.intensidad = intensidad;
 	}
-	
+
 	/**
 	 * Metodo que retorna la cantidad de horas de sueno del paciente durante el episodio
 	 * @return horas de sueno
@@ -76,7 +82,7 @@ public class EpisodioDeDolor {
 	public int getHorasDeSueno() {
 		return horasDeSueno;
 	}
-	
+
 	/**
 	 * Metodo que registra la cantidad de horas de sueno del paciente durante el episodio
 	 * @param horasDeSueno
@@ -84,7 +90,7 @@ public class EpisodioDeDolor {
 	public void setHorasDeSueno(int horasDeSueno) {
 		this.horasDeSueno = horasDeSueno;
 	}
-	
+
 	/**
 	 * Metodo que devuelve el lugar donde se presento el episodio
 	 * @return lugar
@@ -92,7 +98,7 @@ public class EpisodioDeDolor {
 	public String getLugar() {
 		return lugar;
 	}
-	
+
 	/**
 	 * Metodo que registra el lugar donde se presento el episodio
 	 * @param lugar
@@ -100,7 +106,7 @@ public class EpisodioDeDolor {
 	public void setLugar(String lugar) {
 		this.lugar = lugar;
 	}
-    
+
 
 
 }

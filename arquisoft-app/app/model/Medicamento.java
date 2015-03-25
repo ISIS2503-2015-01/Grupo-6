@@ -12,9 +12,17 @@ public class Medicamento {
     private String nombre;
     private double dosis; 
     private int frecuencia;
+    private Long episodioDeDolorId;
     
     
-    public Medicamento(){}
+    public Medicamento(String nombre, double dosis, int frecuencia, Long episodioDeDolorId ){
+    	
+    	this.nombre = nombre ;
+    	this.dosis = dosis;
+    	this.frecuencia = frecuencia;
+    	this.episodioDeDolorId = episodioDeDolorId;
+    }
+    
     /**
      * Metodo que devuelve el nombre del medicamento
      * @return nombre

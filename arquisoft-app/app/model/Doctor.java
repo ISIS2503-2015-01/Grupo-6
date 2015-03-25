@@ -1,5 +1,6 @@
 package model;
 import javax.persistence.*;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
@@ -12,9 +13,11 @@ public class Doctor {
     private String nombre;
     private String apellido;
     
-    public Doctor()
+    public Doctor(Long id, String nombre, String apellido)
     {
-    	
+    	this.id = id;
+    	this.nombre = nombre;
+    	this.apellido = apellido;
     }
     /**
      * Metodo que retorna el nombre del doctor

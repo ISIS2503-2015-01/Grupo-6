@@ -2,76 +2,64 @@ package controllers;
 
 import java.util.List;
 
+import javax.persistence.Query;
+
+import com.fasterxml.jackson.databind.JsonNode;
+
+import model.Doctor;
 import model.Paciente;
+import play.db.jpa.JPA;
+import play.db.jpa.Transactional;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
+import play.mvc.Results;
 import views.html.index;
 
 
 
 public class DoctorController extends Controller 
 {
-	//
-	//---------------------------------------||
-	//Servicios para experimento 1
-	//
-    /**
-     * Metodo que retorna todos los episodios de un paciente a partir de su id
-     * @param id
-     * @return
-     */
-    public static Result getEpisodios(long id)
-    {
-    	 return ok(index.render("Episodios"));
-    }
-    
-
-    /**
-     * Metodo que retorna todos los episodios de un paciente a partir de su id, en un rango de fechas
-     * @param id
-     * @param date1
-     * @param date2
-     * @return
-     */
-    public static Result getEpisodiosPorFecha(Long id, String date1, String date2)
-    {
-    	 return (Result) ok(index.render("episodiosPorFecha"));
-    }
-    /**
-     * Retorna la informacion asociada a un episodio a partir su id
-     * @param id
-     * @return
-     */
-    public static Result getEpisodio(Long id)
-    {
-    	 return (Result) ok(index.render("episodio"));
-    }
-    //
-    //---------------------------------------||
-    //
-
+	@Transactional
     public static Result createDoctor()
 	{
-//		Paciente newUser = Json.fromJson(request().body().asJson(), Paciente.class);
-		return ok(index.render("createPacientes"));
+
+    	JsonNode web = Controller.request().body().asJson(); 	
+        Long documento = Long.parseLong(web.findPath("documento").asText());
+        String nombre = web.findPath("nombre").asText();
+        String apellido = web.findPath("apellido").asText();
+        try
+        {
+
+            Doctor doctor = new Doctor(documento, nombre, apellido);
+            JPA.em().persist(doctor);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Results.ok("Error al crear el doctor");
+        }
+        return Results.created();
 		
 	}
-		
+	@Transactional
 	public static Result getDoctores()
 	{
-//	    List<Paciente> users = Database.getUsers();
-//	    return ok(Json.toJson(users));
-	    return ok(index.render("getDoctores"));
+		
+		Query q = JPA.em().createQuery("SELECT p FROM Doctor p");
+		List<Paciente> lista = q.getResultList();
+		return Results.ok(Json.toJson(lista));
+		
 	}
-
+	@Transactional
 	public static Result getDoctor(Long id)
 	{
-//	    User user = Database.getUser(id);
-//	    return user == null ? notFound() : ok(Json.toJson(user));
-	    return ok(index.render("getDoctor"));
+
+		Doctor q = JPA.em().find(Doctor.class, id);
+	    return Results.ok(Json.toJson(q));
+	    
 	}
 
+	
 	public static Result updateDoctor(Long id)
 	{
 //	    User user = Json.fromJson(request().body().asJson(), User.class);

@@ -1,5 +1,9 @@
 package model;
+import java.util.ArrayList;
+import java.util.Collection;
+
 import javax.persistence.*;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
@@ -10,11 +14,21 @@ public class CatalizadorAsociado {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     public Long id;
+    
     private String actividadFisica;
     private String estadoTiempo;
+    private Long episodioDeDolorId;
     
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="catalizadorAsociadoId")
+    private Collection<Alimento> alimento = new ArrayList<Alimento>();
     
-    public CatalizadorAsociado(){}
+    public CatalizadorAsociado(String actividadFisica, String estadoTiempo, Long episodioDeDolorId){
+    	
+    	this.actividadFisica = actividadFisica;
+    	this.estadoTiempo = estadoTiempo;
+    	this.episodioDeDolorId = episodioDeDolorId;
+    	
+    }
     /**
      * Retorna la actividad fisica del paciente durante el episodio
      * @return actividadFisica
