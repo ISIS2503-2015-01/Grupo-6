@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 
 import model.Doctor;
 import model.Paciente;
+import play.data.Form;
 import play.db.jpa.JPA;
 import play.db.jpa.Transactional;
 import play.libs.Json;
@@ -20,6 +21,8 @@ import views.html.index;
 
 public class DoctorController extends Controller 
 {
+	static Form<Doctor> doctorForm = Form.form(Doctor.class);
+	
 	@Transactional
     public static Result createDoctor()
 	{

@@ -1,5 +1,9 @@
-/models/
-/controllers/
 /META-INF/
+/application.conf
+/controllers/
 /model/
+/routes
 /views/
+/ApplicationTest.class
+/IntegrationTest$1.class
+/IntegrationTest.class

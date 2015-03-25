@@ -9,6 +9,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 
 import java.util.*;
 
+import play.data.Form;
 import play.db.jpa.*;
 import play.libs.Json;
 import play.mvc.Controller;
@@ -17,9 +18,12 @@ import play.mvc.Results;
 import views.html.index;
 public class EpisodioController extends Controller
 {
+	static Form<EpisodioDeDolor> episodioDeDolor = Form.form(EpisodioDeDolor.class);
+	
 	@Transactional
 	public static Result createEpisodio()
 	{
+		
 		JsonNode web = Controller.request().body().asJson(); 	
         String intensidad = (web.findPath("intensidad").asText());
         String horasSueno = web.findPath("horasSueno").asText();

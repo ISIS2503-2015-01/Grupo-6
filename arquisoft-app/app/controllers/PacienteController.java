@@ -56,7 +56,7 @@ public class PacienteController extends Controller
 	@Transactional
 	public static Result getPacientes()
 	{
-		Query q = JPA.em().createQuery("SELECT p FROM                                                                                                                                                              p");
+		Query q = JPA.em().createQuery("SELECT p FROM Paciente p");
 		List<Paciente> lista = q.getResultList();
 		return Results.ok(Json.toJson(lista));
 	}
