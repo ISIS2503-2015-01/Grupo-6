@@ -1,0 +1,136 @@
+/*
+	Scalar by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	body, input, select, textarea {
+		font-size: 12pt;
+	}
+
+	h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
+		display: none;
+	}
+
+	h2 {
+		font-size: 1.35em;
+	}
+
+	h3 {
+		font-size: 1.1em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+
+/* Section/Article */
+
+	header p br {
+		display: none;
+	}
+
+	header h2 + p {
+		font-size: 1.1em;
+	}
+
+	header h3 + p {
+		font-size: 1em;
+	}
+
+/* Icon */
+
+	.icon.major {
+		height: 3.75em;
+		line-height: 3.75em;
+		width: 3.75em;
+	}
+
+		.icon.major:before {
+			font-size: 1.75em;
+		}
+
+/* Image */
+
+	.image.style1 {
+		border-width: 0.75em;
+	}
+
+		.image.style1:after {
+			display: none;
+		}
+
+/* List */
+
+	ul.major-icons li {
+		padding-right: 1.5em;
+	}
+
+		ul.major-icons li .icon {
+			font-size: 0.5em;
+		}
+
+/* Feature */
+
+	.feature {
+		padding-left: 5em;
+	}
+
+		.feature:before {
+			left: 3.75em;
+		}
+
+		.feature .icon.major {
+			font-size: 0.5em;
+		}
+
+/* Tree */
+
+	.tree {
+		margin: 0;
+		padding: 0;
+	}
+
+		.tree:before, .tree:after {
+			display: none;
+		}
+
+/* Header */
+
+	#skel-layers-wrapper {
+		padding-top: 44px;
+	}
+
+	#header {
+		height: 44px;
+		line-height: 44px;
+	}
+
+		#header h1 {
+			font-size: 0.9em;
+		}
+
+/* Banner */
+
+	#banner {
+		padding: 4em 0 2em 0;
+	}
+
+		#banner h2 {
+			font-size: 1.5em;
+		}
+
+/* Layers */
+
+	#navButton .toggle:before {
+		height: 44px;
+		line-height: 44px;
+		width: 44px;
+	}
+
+	#navPanel .link {
+		line-height: 44px;
+		padding: 0 1.25em;
+	}

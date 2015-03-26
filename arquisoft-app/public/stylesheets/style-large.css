@@ -1,0 +1,71 @@
+/*
+	Scalar by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	body, input, select, textarea {
+		font-size: 11pt;
+	}
+
+/* Tree */
+
+	.tree:after {
+		left: -3em;
+		width: calc(100% + 3em);
+	}
+
+	.tree.last:after {
+		width: calc(50% + 3em);
+	}
+
+/* Wrapper */
+
+	.wrapper {
+		padding: 4em 0 2em 0;
+	}
+
+		.wrapper.split .primary {
+			padding: 3em 3em 1em 0;
+		}
+
+		.wrapper.split .secondary > section {
+			padding: 3em 0 1em 3em;
+		}
+
+/* Header */
+
+	#skel-layers-wrapper {
+		padding-top: 3.5em;
+	}
+
+	#header {
+		height: 3.5em;
+		line-height: 3.5em;
+	}
+
+		#header h1 {
+			font-size: 1em;
+		}
+
+		#header nav {
+			font-size: 0.9em;
+		}
+
+	.dropotron.level-0 {
+		font-size: 0.9em;
+	}
+
+/* Banner */
+
+	#banner {
+		padding: 6em 0 4em 0;
+	}
+
+/* Footer */
+
+	#footer {
+		padding: 4em 0 2em 0;
+	}
