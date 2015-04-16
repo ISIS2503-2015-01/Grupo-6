@@ -5,7 +5,8 @@
 
 # Home page
 GET     /                           controllers.Application.index()
-
+# Views
+GET		/crearPacientetry1			controllers.Application.sayHello()
 
 ############################################################################################################################################################
 # ~~~~ Rutas primera entrega

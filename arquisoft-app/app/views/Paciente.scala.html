@@ -1,4 +1,4 @@
-@(title: String)(content: Html)
+@(title: String)
 
 <!DOCTYPE html>
 
@@ -46,74 +46,12 @@
     <script src="@routes.Assets.at("js/hello.js")" type="text/javascript"></script>
     <script type="text/javascript"src="@routes.Assets.at("js/bootstrap.min.js")"></script>
     </head>
-    <body class="landing">
-    <!-- Header -->
-			<header id="header" class="skel-layers-fixed">
-				<div class="container">
-					<img id = "dexonlogo" 
-			 style="max-width: 13%;
-					max-height: 13%;"
-					src="images/codepimptr.png">
-					<nav id="nav">
-						<ul>
-							<li class="current"><a href="">Home</a></li>
-							
-					</nav>
-				</div>
-			</header>
-
-		<!-- Banner -->
-			<section id="banner">
-				<div class="container">
-					<header>
-						<h2>Sistema de <br />
-							caracterización<br />
-						de migrañas</h2>
-						
-						<form action="crearPacientetry1" method="GET"> 
-   					 <input type="submit" value="Crear Paciente" />
-					</form>
-						<p>Aquí puede revisar los episodios de dolor de un paciente a partir del numero de identificación
-						en un periodo de tiempo especifico</p>
-					</header>
-					
-					<form method="post" action="#">
+<body>
+<form method="post" action="#">
 						<div class="row uniform 100%">
 							<div class="12u$">
 							<input type="text" placeholder="# Identificación" />
 						</div>
 						</div>
-						
-
-						<div class="row uniform 50%">
-							
-							<div class="6u 12u$(xsmall)">
-								<input type="text" class="datepicker" placeholder="Fecha de inicio"/>
-							</div>
-							<div class="6u$ 12u$(xsmall)">
-								<input type="text" class="datepicker" placeholder="Fecha de finalización"/>
-							</div>
-									
-									<div class="12u$">
-										<ul class="actions">
-											<li><a href="episodios.html" class="button special">Buscar</a></li>
-											
-										</ul>
-									</div>
-								</div>
-							</form>
-				</div>
-			</section>
-
-
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="major-icons">
-					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<p class="copyright">&copy; Code Pimp. All rights reserved.</p>
-			</footer>        
-    </body>
+</body>
 </html>
