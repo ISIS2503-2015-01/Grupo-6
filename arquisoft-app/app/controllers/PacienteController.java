@@ -1,53 +1,63 @@
 package controllers;
 
+
 import java.util.Date;
 import java.util.List;
 
+
 import javax.persistence.Query;
 
-import com.fasterxml.jackson.databind.JsonNode;
-
-import model.Doctor;
 import model.Paciente;
-import play.api.mvc.BodyParser;
-import play.data.Form;
 import play.db.jpa.*;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 import play.mvc.Results;
-import views.html.index;
+
+
 
 public class PacienteController extends Controller
 {
-	static Form<Paciente> pacienteForm = Form.form(Paciente.class);
 	
 	
 	@Transactional
+
 	public static Result createPaciente()
-	{	
+	{	Object d = "documento";
+		Object n = "nombre";
+		Object a = "apellido";
+		Object f = "fechaNacimiento";
+		Object g = "genero";
+		Object t = "telefono";
+		Object e = "email";
+		System.out.println(request().body().asFormUrlEncoded());
+		String[] doc = request().body().asFormUrlEncoded().get(d);
+		String[] nom = request().body().asFormUrlEncoded().get(n);
+		String[] ape = request().body().asFormUrlEncoded().get(a);
+		String[] fec = request().body().asFormUrlEncoded().get(f);
+		String[] gen = request().body().asFormUrlEncoded().get(g);
+		String[] tel = request().body().asFormUrlEncoded().get(t);
+		String[] ema = request().body().asFormUrlEncoded().get(e);
 		
-		JsonNode web = Controller.request().body().asJson(); 	
-        Long documento = Long.parseLong(web.findPath("documento").asText());
-        String nombre = web.findPath("nombre").asText();
-        String apellido = web.findPath("apellido").asText();
-        String fechaNacimiento = web.findPath("fechaNacimiento").asText();
+        String documento =  doc[0];
+        String nombre = nom[0];
+        String apellido = ape[0];
+        String fechaNacimiento = fec[0];
         Date fecha = new Date();
-        String genero = web.findPath("genero").asText();
-        String telefonoString = web.findPath("telefono").asText();
+        String genero = gen[0];
+        String telefonoString = tel[0];
         int telefono = Integer.parseInt(telefonoString);
-        String email = web.findPath("email").asText();
+        String email = ema[0];
         
         
         try
-        {
-
-            Paciente paciente = new Paciente(documento, nombre, apellido, fecha, genero, telefono, email) ;
+        {	Long doc1 = Long.parseLong(documento);
+            Paciente paciente = new Paciente(doc1, nombre, apellido, fecha, genero, telefono, email) ;
             JPA.em().persist(paciente);
 
-        } catch (Exception e) {
-            e.printStackTrace();
-            return Results.ok("Error al crear el doctor");
+        } catch (Exception e2) {
+            e2.printStackTrace();
+            return Results.ok("Error al crear al paciente");
         }
         return Results.created();
 		

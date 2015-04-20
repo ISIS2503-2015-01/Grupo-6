@@ -8,6 +8,8 @@ GET     /                           controllers.Application.index()
 # Views
 GET		/crearPacientetry1			controllers.Application.sayHello()
 
+GET     /vamos						controllers.Application.vamos()
+
 ############################################################################################################################################################
 # ~~~~ Rutas primera entrega
 

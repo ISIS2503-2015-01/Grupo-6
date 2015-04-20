@@ -1,0 +1,147 @@
+@(title: String)
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@title</title>
+   <meta http-equiv="content-type" content="application/json" />
+    
+  
+    
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="shortcut icon"  href="@routes.Assets.at("images/cplogo.png")" />
+    <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("css/bootstrap.min.css")">
+	<link rel="stylesheet" href="@routes.Assets.at("css/skel.css")" />
+	<link rel="stylesheet" href="@routes.Assets.at("css/style.css")" />
+	<link rel="stylesheet" href="@routes.Assets.at("css/style-xlarge.css")" />    
+    
+    
+    
+     <!-- Load jQuery JS -->
+   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <!-- Load jQuery UI Main JS  -->
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+			
+		<script type="text/javascript">
+		$(document).ready(
+  
+  /* This is the function that will get executed after the DOM is fully loaded */
+  function () {
+    $( ".datepicker" ).datepicker({
+      changeMonth: true,//this option for allowing user to select month
+      changeYear: true //this option for allowing user to select from year range
+    });
+  }
+
+);
+		</script>
+    <script src="@routes.Assets.at("js/jquery.min.js")" type="text/javascript"></script>
+	<script src="@routes.Assets.at("js/jquery.dropotron.min.js")" type="text/javascript"></script>
+	<script src="@routes.Assets.at("js/skel.min.js")" type="text/javascript"></script>
+	<script src="@routes.Assets.at("js/skel-layers.min.js")" type="text/javascript"></script>
+	<script src="@routes.Assets.at("js/init.js")" type="text/javascript"></script>
+    <script src="@routes.Assets.at("js/hello.js")" type="text/javascript"></script>
+    <script type="text/javascript"src="@routes.Assets.at("js/bootstrap.min.js")"></script>
+    </head>
+<body>
+<form  action="paciente" method="GET">
+<section>
+							<h3>Table</h3>
+							<h4>Default</h4>
+							<div class="table-wrapper">
+							
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+										
+											<td >hola</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item 2</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item 3</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item 4</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item 5</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+							<h4>Alternate</h4>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item 1</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item 2</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item 3</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item 4</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item 5</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+						</form>
+</body>
+</html>

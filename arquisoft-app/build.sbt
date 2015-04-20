@@ -14,5 +14,6 @@ libraryDependencies ++= Seq(
   javaWs,
   "org.hibernate" % "hibernate-entitymanager" % "3.6.9.Final",
   "org.postgresql" % "postgresql" % "9.2-1003-jdbc4",
-  "org.webjars" % "bootstrap" % "3.0.2"
+  "org.webjars" % "bootstrap" % "3.0.2",
+  "org.codehaus.jackson" % "jackson-core-asl" % "1.9.13"
 )

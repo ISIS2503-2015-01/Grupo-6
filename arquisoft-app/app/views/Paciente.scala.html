@@ -1,11 +1,10 @@
 @(title: String)
-
 <!DOCTYPE html>
 
 <html>
     <head>
         <title>@title</title>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <meta http-equiv="content-type" content="application/json" />
     
   
     
@@ -47,11 +46,67 @@
     <script type="text/javascript"src="@routes.Assets.at("js/bootstrap.min.js")"></script>
     </head>
 <body>
-<form method="post" action="#">
-						<div class="row uniform 100%">
+ 	<form id="formcrearpac"  enctype="application/x-www-form-urlencoded" action="crearpaciente" method="POST">
+		<fieldset>
+			<legend>Información del Cliente</legend>
+				<div>
+					<label>Cedula</label><br>
+					<div class="row uniform 100%">
 							<div class="12u$">
-							<input type="text" placeholder="# IdentificaciÃ³n" />
-						</div>
-						</div>
+					<input type="text" id="documento" name="documento" /><br>
+				    </div>
+				    </div>
+				</div>
+				 <div>
+					<label>Nombre</label><br>
+					<input type="text" id="nombre" name="nombre" maxlength="100" /><br>
+				</div>
+				<div>
+					<label>Apellido</label><br>
+					<input type="text" id="apellido" name="apellido" maxlength="100" /><br>
+				</div>
+				<div class="6u 12u$(xsmall)">
+					<input type="text" class="datepicker" placeholder="Fecha de nacimiento" id="fechaNacimiento" name="fechaNacimiento"/>
+				</div>
+				<div>
+					<label>Genero</label><br>
+					<select id ="genero" name="genero">
+ 						 <option value ="Femenino">Femenino</option>
+  						<option value ="Masculino">Masculino</option>
+					</select>
+				</div>
+				<div>
+					<label>Telefono</label><br>
+					<input type="text" id="telefono" name="telefono" /><br>
+				</div>
+				<div>
+					<label>Email</label><br>
+					<input type="text" id="email" name="email"  /><br>
+				</div>
+				<div>
+					<input type="submit" value="Crear Paciente" />
+				</div> 
+		</fieldset>
+	</form>
+ 	 <script type='text/javascript'>
+    /* attach a submit handler to the form */
+    $("#formcrearpac").submit(function(event) {
+
+      /* stop form from submitting normally */
+      event.preventDefault();
+
+      /* get some values from elements on the page: */
+      var $form = $( this ),
+          url = $form.attr( 'action' );
+
+      /* Send the data using post */
+      var posting = $.post( url, {  documento: $('#documento').val(), nombre: $('#nombre').val(), apellido: $('#apellido').val(),  fechaNacimiento: $('#fechaNacimiento').val(),  genero: $('#genero').val(),  telefono: $('#telefono').val(),  email: $('#email').val() } );
+
+      /* Alerts the results */
+      posting.done(function( data ) {
+        alert('success');
+      });
+    });
+</script>   
 </body>
-</html>
+</html> 
