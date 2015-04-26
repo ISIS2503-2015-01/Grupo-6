@@ -1,4 +1,6 @@
 package model;
+import java.util.List;
+
 import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -6,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-public class Doctor {
+public class Doctor{
 
     @Id
     public Long id;
@@ -75,5 +77,6 @@ public class Doctor {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
-   
+
+	
 }

@@ -71,3 +71,13 @@ PUT		/episodio/:id				controllers.EpisodioController.updateEpisodio(id: Long)
 
 #Ver lista de episodio
 DELETE	/episodio/:id				controllers.EpisodioController.deleteEpisodio(id: Long)
+
+##########################################################################################################
+#Autenticacion
+
+GET     /login                      controllers.Application.login
+#POST    /login                      controllers.Application.doLogin
+
+
+#GET     /signup                     controllers.Application.signup
+#POST    /signup                     controllers.Application.doSignup

@@ -20,5 +20,26 @@ public class Application extends Controller {
     	return ok(verpaciente.render("Lista de pacientes"));
     	
     }
+    
+    public static Result login(){
+    	
+    	return ok();
+    }
+
+//    public static Result login() {
+//		return ok(views.html.login.render(form(Login.class).bindFromRequest()));
+//	}
+
+//	public static Result doLogin() {
+//		com.feth.play.module.pa.controllers.Authenticate.noCache(response());
+//		final Form<Login> filledForm = form(Login.class).bindFromRequest();
+//		if (filledForm.hasErrors()) {
+//			// User did not fill everything properly
+//			return badRequest(views.html.login.render(filledForm));
+//		} else {
+//			// Everything was filled
+//			return TestUsernamePasswordAuthProvider.handleLogin(ctx());
+//		}
+//	}
 
 }
