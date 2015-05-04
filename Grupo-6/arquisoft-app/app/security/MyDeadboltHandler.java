@@ -34,7 +34,6 @@ public class MyDeadboltHandler extends AbstractDeadboltHandler
         this.dynamicHandler = new CompositeDynamicResourceHandler(delegates);
     }
 
-    //@play.db.jpa.Transactional
     public Subject getSubject(final Http.Context context)
     {
     	final MutableLong a = new MutableLong();

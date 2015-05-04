@@ -4,6 +4,9 @@ import java.util.List;
 
 import javax.persistence.Query;
 
+import be.objectify.deadbolt.java.actions.Group;
+import be.objectify.deadbolt.java.actions.Restrict;
+
 import com.fasterxml.jackson.databind.JsonNode;
 
 import model.Doctor;
@@ -23,7 +26,10 @@ public class DoctorController extends Controller
 {
 	static Form<Doctor> doctorForm = Form.form(Doctor.class);
 	
+	
+	@Restrict({@Group("admin")})
 	@Transactional
+	
     public static Result createDoctor()
 	{
 
@@ -44,15 +50,21 @@ public class DoctorController extends Controller
         return Results.created();
 		
 	}
-	@Transactional
+	
+
+	
+	@Restrict({@Group("admin")})
+	@play.db.jpa.Transactional
 	public static Result getDoctores()
 	{
-		
-		Query q = JPA.em().createQuery("SELECT d FROM Doctor d");
-		List<Paciente> lista = q.getResultList();
-		return Results.ok(Json.toJson(lista));
-		
+		List<Doctor> resp=null;
+		Query q=JPA.em().createQuery("from Doctor");
+		resp=q.getResultList();
+		return Results.ok(Json.toJson(resp));
 	}
+				
+	
+	@Restrict({@Group("admin")})
 	@Transactional
 	public static Result getDoctor(String id)
 	{
@@ -61,20 +73,27 @@ public class DoctorController extends Controller
 	    return Results.ok(Json.toJson(q));
 	    
 	}
-
 	
+	
+
+	@Restrict({@Group("admin")})
+	@Transactional
 	public static Result updateDoctor(String id)
 	{
-//	    User user = Json.fromJson(request().body().asJson(), User.class);
-//	    User updated = Database.updateUser(id, user);
-//	    return ok(Json.toJson(updated));
-		return ok(index.render("updateDoctor"));
+		
+		//no lo actualiza
+		Doctor q = JPA.em().find(Doctor.class, id);
+	    return Results.ok(Json.toJson(q));
 	}
 
+	@Restrict({@Group("admin")})
+	@Transactional
 	public static Result deleteDoctor(String id)
 	{
-//	    Database.deleteUser(id);
-		return ok(index.render("deleteDoctor")); // http://stackoverflow.com/a/2342589/1415732
+		
+		//no lo borra
+		Doctor q = JPA.em().find(Doctor.class, id);
+	    return Results.ok(Json.toJson(q));
 	}
 
 }

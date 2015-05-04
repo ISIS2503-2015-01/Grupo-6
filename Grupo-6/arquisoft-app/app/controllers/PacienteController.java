@@ -5,8 +5,16 @@ import java.util.Date;
 import java.util.List;
 
 
+
+
+
+
+
+
 import javax.persistence.Query;
 
+import be.objectify.deadbolt.java.actions.Group;
+import be.objectify.deadbolt.java.actions.Restrict;
 import model.Paciente;
 import play.db.jpa.*;
 import play.libs.Json;
@@ -20,8 +28,8 @@ public class PacienteController extends Controller
 {
 	
 	
+	@Restrict({@Group("admin")})
 	@Transactional
-
 	public static Result createPaciente()
 	{	Object d = "documento";
 		Object n = "nombre";
@@ -63,6 +71,7 @@ public class PacienteController extends Controller
 		
 	}
 	
+	@Restrict({@Group("admin")})
 	@Transactional
 	public static Result getPacientes()
 	{
@@ -71,6 +80,7 @@ public class PacienteController extends Controller
 		return Results.ok(Json.toJson(lista));
 	}
 	
+	@Restrict({@Group("admin")})
 	@Transactional
 	public static Result getPaciente(Long id)
 	{
@@ -78,19 +88,23 @@ public class PacienteController extends Controller
 	    return Results.ok(Json.toJson(q));
 	}
 
-//	public static Result updatePaciente(Long id)
-//	{
-//		JPA.em().
-////	    User usen.fromJson(request().body().asJson(), User.class);
-////	    User updated = Database.updateUser(id, user);
-////	    return ok(Jsonr = Jso.toJson(updated));
-//		return ok(index.render("updatePaciente"));
-//	}
-//
-//	public static Result deletePaciente(Long id)
-//	{
-////	    Database.deleteUser(id);
-//	    return noContent(); // http://stackoverflow.com/a/2342589/1415732
-//	}
+	@Restrict({@Group("admin")})
+	@Transactional
+	public static Result updatePaciente(Long id)
+	{
+		//no lo actualiza
+		Paciente q = JPA.em().find(Paciente.class, id);
+	    return Results.ok(Json.toJson(q));
+	}
+
+	@Restrict({@Group("admin")})
+	@Transactional
+	public static Result deletePaciente(Long id)
+	{
+
+		//no lo borra
+		Paciente q = JPA.em().find(Paciente.class, id);
+	    return Results.ok(Json.toJson(q));
+	}
 
 }

@@ -75,9 +75,7 @@ DELETE	/episodio/:id				controllers.EpisodioController.deleteEpisodio(id: Long)
 ##########################################################################################################
 #Autenticacion
 
-GET     /login                      controllers.Application.login
-#POST    /login                      controllers.Application.doLogin
-
-
-#GET     /signup                     controllers.Application.signup
-#POST    /signup                     controllers.Application.doSignup
+GET     /login                      controllers.Application.login()
+POST    /login                      controllers.Application.postLogin()
+GET     /profile                    controllers.Application.profile()
+GET     /logout                      controllers.Application.logout()

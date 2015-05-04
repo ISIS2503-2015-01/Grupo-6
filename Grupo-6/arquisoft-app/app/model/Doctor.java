@@ -21,7 +21,7 @@ public class Doctor implements Subject{
     
     private String password;
     
-    private String nombre;
+    private String email;
     
 	@ManyToMany
     public List<SecurityRole> roles;
@@ -35,11 +35,11 @@ public class Doctor implements Subject{
      * @param nombre
      * @param apellido
      */
-    public Doctor(String password, String id, String nombre)
+    public Doctor(String password, String id, String email)
     {
     	roles=new ArrayList<SecurityRole>();
     	this.id = id;
-    	this.nombre = nombre;
+    	this.email = email;
     	this.password = password;
     }
     /**
@@ -62,16 +62,16 @@ public class Doctor implements Subject{
      * Metodo que retorna el nombre del doctor
      * @return nombre
      */
-	public String getNombre() {
-		return nombre;
+	public String getEmail() {
+		return email;
 	}
 	
 	/**
 	 * Metodo que registra el nombre del doctor
 	 * @param nombre
 	 */
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setEmail(String nombre) {
+		this.email = nombre;
 	}
 	
 	/**
@@ -94,7 +94,7 @@ public class Doctor implements Subject{
 	
 	@Override
 	public String getIdentifier() {
-		return id;
+		return email;
 	}
 
 	@Override
