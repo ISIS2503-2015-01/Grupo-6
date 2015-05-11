@@ -1,5 +1,5 @@
-New log file opened at Mon Apr 27 13:35:19 COT 2015 by 265432@ISIS2503-33
-jvm 265432@ISIS2503-33
+New log file opened at Mon May 11 18:33:08 COT 2015 by 267260@ISIS2503-33
+jvm 267260@ISIS2503-33
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=24.71-b01
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.7
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:PermSize=64m, -XX:MaxPermSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\project, returning: (arquisoft-app-build)
 Loading project definition from C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@3fa5ace6, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@1319717a, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,35 +67,106 @@ Set current project to arquisoft-app (in build file:/C:/Users/template/Grupo-6/G
 > server-handle-next-server-request
 > {file:/C:/Users/template/Grupo-6/Grupo-6/arquisoft-app/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@6cb8bc14, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@13885abb, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set()
+	modified: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
+Initial directly invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set()
+All initially invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java)
 
-Total time: 2 s, completed 27/04/2015 01:35:47 PM
+Read from stdout: Compiling 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@e040a13 directly...
+Read from stdout: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java uses unchecked or unsafe operations.
+C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java uses unchecked or unsafe operations.
+Read from stdout: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java: Recompile with -Xlint:unchecked for details.
+C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 3.167397462 s
+Java analysis took 0.851662642 s
+Java compile + analysis took 4.096566812 s
+Invalidating C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java...
+Invalidating (transitively) by inheritance from C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java...
+Initial set of included nodes: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java)
+The C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java source file has the following regular definitions changed:
+	getPaciente, getPacientes, deletePaciente, updatePaciente, createPaciente.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java
+The following modified names cause invalidation of C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala: Set(getPaciente, getPacientes, createPaciente)
+The following modified names cause invalidation of C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala: Set(getPaciente, getPacientes, createPaciente)
+New invalidations:
+	Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+Initial set of included nodes: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala
+Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
+Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
+Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Login.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
+Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
+Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala
+Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Profile.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
+Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\index.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
+Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Secured.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
+Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
+Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java
+Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Paciente.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+Read from stdout: Compiling 2 Scala sources and 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
+Compiling 2 Scala sources and 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 2275f5fe, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\classes;C:\Users\template\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar
+	-classpath
+	C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes;C:\Users\template\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\template\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\template\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\template\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\template\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\io.netty\netty\bundles\netty-3.9.3.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\template\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\template\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\template\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\template\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\template\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\template\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\template\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\template\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar;C:\Users\template\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\template\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\template\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\template\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\template\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\template\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ebean_2.11\jars\play-java-ebean_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-3.3.4.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-3.2.2.jar;C:\Users\template\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\jars\play-java-jpa_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\template\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-entitymanager\jars\hibernate-entitymanager-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-core\jars\hibernate-core-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\antlr\antlr\jars\antlr-2.7.6.jar;C:\Users\template\.ivy2\cache\commons-collections\commons-collections\jars\commons-collections-3.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-commons-annotations\jars\hibernate-commons-annotations-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\cglib\cglib\jars\cglib-2.2.jar;C:\Users\template\.ivy2\cache\asm\asm\jars\asm-3.1.jar;C:\Users\template\.ivy2\cache\javassist\javassist\jars\javassist-3.12.0.GA.jar;C:\Users\template\.ivy2\cache\org.postgresql\postgresql\jars\postgresql-9.2-1003-jdbc4.jar;C:\Users\template\.ivy2\cache\org.webjars\bootstrap\jars\bootstrap-3.0.2.jar;C:\Users\template\.ivy2\cache\org.webjars\jquery\jars\jquery-1.9.0.jar;C:\Users\template\.ivy2\cache\org.codehaus.jackson\jackson-core-asl\jars\jackson-core-asl-1.9.13.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-java_2.11\jars\deadbolt-java_2.11-2.3.3.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-core_2.11\jars\deadbolt-core_2.11-2.3.3.jar
+Scala compilation took 21.55285504 s
+Attempting to call com.sun.tools.javac.api.JavacTool@e040a13 directly...
+Read from stdout: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java uses unchecked or unsafe operations.
+C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java uses unchecked or unsafe operations.
+Read from stdout: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java: Recompile with -Xlint:unchecked for details.
+C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 1.008808522 s
+Java analysis took 0.352851412 s
+Java compile + analysis took 1.395663696 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 34 s, completed 11/05/2015 06:34:03 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/template/Grupo-6/Grupo-6/arquisoft-app/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@78b06e9e, check cycles: false
-Total time: 0 s, completed 27/04/2015 01:35:48 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@241cd5ad, check cycles: false
+Total time: 0 s, completed 11/05/2015 06:34:04 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/template/Grupo-6/Grupo-6/arquisoft-app/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@19866872, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@3264b89d, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -112,36 +183,36 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed 27/04/2015 01:35:49 PM
+Total time: 2 s, completed 11/05/2015 06:34:06 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/template/Grupo-6/Grupo-6/arquisoft-app/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@120f74d2, check cycles: false
-Total time: 0 s, completed 27/04/2015 01:35:49 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@61429e28, check cycles: false
+Total time: 0 s, completed 11/05/2015 06:34:06 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > backgroundRun
 Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@1cd03096, check cycles: false
-Total time: 1 s, completed 27/04/2015 01:36:01 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@5aa02451, check cycles: false
+Total time: 1 s, completed 11/05/2015 06:34:31 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/template/Grupo-6/Grupo-6/arquisoft-app/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@3aa16875, check cycles: false
-Total time: 1 s, completed 27/04/2015 01:36:11 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@526b23d2, check cycles: false
+Total time: 1 s, completed 11/05/2015 06:34:42 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@2e640dbc, check cycles: false
-Total time: 0 s, completed 27/04/2015 01:36:13 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@7fec9f7a, check cycles: false
+Total time: 0 s, completed 11/05/2015 06:34:44 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/template/Grupo-6/Grupo-6/arquisoft-app/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@6c898b8e, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@3fbef74d, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -164,34 +235,239 @@ Copy resource mappings:
 	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\play.plugins,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\play.plugins)
 	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\routes,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\routes)
 	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\META-INF\persistence.xml,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\META-INF\persistence.xml)
-Total time: 3 s, completed 27/04/2015 01:36:20 PM
+Total time: 3 s, completed 11/05/2015 06:34:52 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@7ea8d890, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@1246a8a6, check cycles: false
 
 Initial source changes: 
-	removed:Set()
+	removed:Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala)
 	added: Set()
-	modified: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
+	modified: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
+Initial directly invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
+All initially invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala)
 
-Read from stdout: Compiling 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@28f3a7fe directly...
-Java compilation took 3.006418415 s
-Java analysis took 0.816172795 s
-Java compile + analysis took 3.898462376 s
+Read from stdout: Compiling 1 Scala source and 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
+Compiling 1 Scala source and 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 7d83728c, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\classes;C:\Users\template\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar
+	-classpath
+	C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes;C:\Users\template\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\template\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\template\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\template\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\template\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\io.netty\netty\bundles\netty-3.9.3.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\template\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\template\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\template\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\template\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\template\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\template\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\template\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\template\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar;C:\Users\template\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\template\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\template\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\template\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\template\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\template\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ebean_2.11\jars\play-java-ebean_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-3.3.4.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-3.2.2.jar;C:\Users\template\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\jars\play-java-jpa_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\template\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-entitymanager\jars\hibernate-entitymanager-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-core\jars\hibernate-core-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\antlr\antlr\jars\antlr-2.7.6.jar;C:\Users\template\.ivy2\cache\commons-collections\commons-collections\jars\commons-collections-3.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-commons-annotations\jars\hibernate-commons-annotations-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\cglib\cglib\jars\cglib-2.2.jar;C:\Users\template\.ivy2\cache\asm\asm\jars\asm-3.1.jar;C:\Users\template\.ivy2\cache\javassist\javassist\jars\javassist-3.12.0.GA.jar;C:\Users\template\.ivy2\cache\org.postgresql\postgresql\jars\postgresql-9.2-1003-jdbc4.jar;C:\Users\template\.ivy2\cache\org.webjars\bootstrap\jars\bootstrap-3.0.2.jar;C:\Users\template\.ivy2\cache\org.webjars\jquery\jars\jquery-1.9.0.jar;C:\Users\template\.ivy2\cache\org.codehaus.jackson\jackson-core-asl\jars\jackson-core-asl-1.9.13.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-java_2.11\jars\deadbolt-java_2.11-2.3.3.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-core_2.11\jars\deadbolt-core_2.11-2.3.3.jar
+Read from stdout: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\views\Pacientes.scala.html:1: imported `Paciente' is permanently hidden by definition of object Paciente in package html
+C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\views\Pacientes.scala.html:1: imported `Paciente' is permanently hidden by definition of object Paciente in package html
+Read from stdout: @* Pacientes Template File *@
+@* Pacientes Template File *@
+Read from stdout: ^
+^
+Read from stdout: one warning found
+one warning found
+Scala compilation took 3.297013308 s
+Attempting to call com.sun.tools.javac.api.JavacTool@7bd4ba2d directly...
+Read from stdout: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java:33: cannot find symbol
+Read from stdout: symbol:   variable verpaciente
+Read from stdout: location: class controllers.Application
+C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java:33: cannot find symbol
+  symbol:   variable verpaciente
+  location: class controllers.Application
+Read from stdout: verpaciente
+verpaciente
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 6 s, completed 11/05/2015 06:38:28 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/template/Grupo-6/Grupo-6/arquisoft-app/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3ebf3920, check cycles: false
+
+Initial source changes: 
+	removed:Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala)
+	added: Set()
+	modified: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+
+Read from stdout: Compiling 3 Scala sources and 2 Java sources to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
+Compiling 3 Scala sources and 2 Java sources to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 16146ab3, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\classes;C:\Users\template\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar
+	-classpath
+	C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes;C:\Users\template\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\template\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\template\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\template\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\template\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\io.netty\netty\bundles\netty-3.9.3.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\template\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\template\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\template\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\template\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\template\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\template\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\template\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\template\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar;C:\Users\template\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\template\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\template\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\template\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\template\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\template\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ebean_2.11\jars\play-java-ebean_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-3.3.4.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-3.2.2.jar;C:\Users\template\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\jars\play-java-jpa_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\template\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-entitymanager\jars\hibernate-entitymanager-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-core\jars\hibernate-core-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\antlr\antlr\jars\antlr-2.7.6.jar;C:\Users\template\.ivy2\cache\commons-collections\commons-collections\jars\commons-collections-3.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-commons-annotations\jars\hibernate-commons-annotations-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\cglib\cglib\jars\cglib-2.2.jar;C:\Users\template\.ivy2\cache\asm\asm\jars\asm-3.1.jar;C:\Users\template\.ivy2\cache\javassist\javassist\jars\javassist-3.12.0.GA.jar;C:\Users\template\.ivy2\cache\org.postgresql\postgresql\jars\postgresql-9.2-1003-jdbc4.jar;C:\Users\template\.ivy2\cache\org.webjars\bootstrap\jars\bootstrap-3.0.2.jar;C:\Users\template\.ivy2\cache\org.webjars\jquery\jars\jquery-1.9.0.jar;C:\Users\template\.ivy2\cache\org.codehaus.jackson\jackson-core-asl\jars\jackson-core-asl-1.9.13.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-java_2.11\jars\deadbolt-java_2.11-2.3.3.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-core_2.11\jars\deadbolt-core_2.11-2.3.3.jar
+Read from stdout: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\views\Pacientes.scala.html:1: imported `Paciente' is permanently hidden by definition of object Paciente in package html
+C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\views\Pacientes.scala.html:1: imported `Paciente' is permanently hidden by definition of object Paciente in package html
+Read from stdout: @* Pacientes Template File *@
+@* Pacientes Template File *@
+Read from stdout: ^
+^
+Read from stdout: one warning found
+one warning found
+Scala compilation took 6.911747722 s
+Attempting to call com.sun.tools.javac.api.JavacTool@3c775bc6 directly...
+Read from stdout: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java:33: cannot find symbol
+Read from stdout: symbol:   variable verpaciente
+Read from stdout: location: class controllers.Application
+C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java:33: cannot find symbol
+  symbol:   variable verpaciente
+  location: class controllers.Application
+Read from stdout: verpaciente
+verpaciente
+Total time: 11 s, completed 11/05/2015 06:40:00 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@50fe1f9c, check cycles: false
+
+Initial source changes: 
+	removed:Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala)
+	added: Set()
+	modified: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+
+Read from stdout: Compiling 4 Scala sources and 2 Java sources to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
+Compiling 4 Scala sources and 2 Java sources to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 529d5dc2, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\classes;C:\Users\template\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar
+	-classpath
+	C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes;C:\Users\template\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\template\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\template\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\template\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\template\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\io.netty\netty\bundles\netty-3.9.3.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\template\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\template\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\template\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\template\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\template\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\template\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\template\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\template\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar;C:\Users\template\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\template\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\template\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\template\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\template\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\template\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ebean_2.11\jars\play-java-ebean_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-3.3.4.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-3.2.2.jar;C:\Users\template\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\jars\play-java-jpa_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\template\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-entitymanager\jars\hibernate-entitymanager-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-core\jars\hibernate-core-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\antlr\antlr\jars\antlr-2.7.6.jar;C:\Users\template\.ivy2\cache\commons-collections\commons-collections\jars\commons-collections-3.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-commons-annotations\jars\hibernate-commons-annotations-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\cglib\cglib\jars\cglib-2.2.jar;C:\Users\template\.ivy2\cache\asm\asm\jars\asm-3.1.jar;C:\Users\template\.ivy2\cache\javassist\javassist\jars\javassist-3.12.0.GA.jar;C:\Users\template\.ivy2\cache\org.postgresql\postgresql\jars\postgresql-9.2-1003-jdbc4.jar;C:\Users\template\.ivy2\cache\org.webjars\bootstrap\jars\bootstrap-3.0.2.jar;C:\Users\template\.ivy2\cache\org.webjars\jquery\jars\jquery-1.9.0.jar;C:\Users\template\.ivy2\cache\org.codehaus.jackson\jackson-core-asl\jars\jackson-core-asl-1.9.13.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-java_2.11\jars\deadbolt-java_2.11-2.3.3.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-core_2.11\jars\deadbolt-core_2.11-2.3.3.jar
+Read from stdout: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\views\Pacientes.scala.html:1: imported `Paciente' is permanently hidden by definition of object Paciente in package html
+C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\views\Pacientes.scala.html:1: imported `Paciente' is permanently hidden by definition of object Paciente in package html
+Read from stdout: @* Pacientes Template File *@
+@* Pacientes Template File *@
+Read from stdout: ^
+^
+Read from stdout: one warning found
+one warning found
+Scala compilation took 9.490271388 s
+Attempting to call com.sun.tools.javac.api.JavacTool@35a3ff24 directly...
+Read from stdout: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java:33: cannot find symbol
+Read from stdout: symbol:   variable verpaciente
+Read from stdout: location: class controllers.Application
+C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java:33: cannot find symbol
+  symbol:   variable verpaciente
+  location: class controllers.Application
+Read from stdout: verpaciente
+verpaciente
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 14 s, completed 11/05/2015 06:40:17 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@42c3c29d, check cycles: false
+
+Initial source changes: 
+	removed:Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala)
+	added: Set()
+	modified: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+
+Read from stdout: Compiling 4 Scala sources and 2 Java sources to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
+Compiling 4 Scala sources and 2 Java sources to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 541559ff, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\classes;C:\Users\template\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar
+	-classpath
+	C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes;C:\Users\template\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\template\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\template\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\template\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\template\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\io.netty\netty\bundles\netty-3.9.3.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\template\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\template\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\template\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\template\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\template\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\template\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\template\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\template\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar;C:\Users\template\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\template\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\template\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\template\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\template\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\template\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ebean_2.11\jars\play-java-ebean_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-3.3.4.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-3.2.2.jar;C:\Users\template\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\jars\play-java-jpa_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\template\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-entitymanager\jars\hibernate-entitymanager-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-core\jars\hibernate-core-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\antlr\antlr\jars\antlr-2.7.6.jar;C:\Users\template\.ivy2\cache\commons-collections\commons-collections\jars\commons-collections-3.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-commons-annotations\jars\hibernate-commons-annotations-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\cglib\cglib\jars\cglib-2.2.jar;C:\Users\template\.ivy2\cache\asm\asm\jars\asm-3.1.jar;C:\Users\template\.ivy2\cache\javassist\javassist\jars\javassist-3.12.0.GA.jar;C:\Users\template\.ivy2\cache\org.postgresql\postgresql\jars\postgresql-9.2-1003-jdbc4.jar;C:\Users\template\.ivy2\cache\org.webjars\bootstrap\jars\bootstrap-3.0.2.jar;C:\Users\template\.ivy2\cache\org.webjars\jquery\jars\jquery-1.9.0.jar;C:\Users\template\.ivy2\cache\org.codehaus.jackson\jackson-core-asl\jars\jackson-core-asl-1.9.13.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-java_2.11\jars\deadbolt-java_2.11-2.3.3.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-core_2.11\jars\deadbolt-core_2.11-2.3.3.jar
+Read from stdout: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\views\Pacientes.scala.html:1: imported `Paciente' is permanently hidden by definition of object Paciente in package html
+C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\views\Pacientes.scala.html:1: imported `Paciente' is permanently hidden by definition of object Paciente in package html
+Read from stdout: @* Pacientes Template File *@
+@* Pacientes Template File *@
+Read from stdout: ^
+^
+Read from stdout: one warning found
+one warning found
+Scala compilation took 7.319595996 s
+Attempting to call com.sun.tools.javac.api.JavacTool@549dc607 directly...
+Java compilation took 1.596143084 s
+Java analysis took 0.451163278 s
+Java compile + analysis took 2.105076134 s
 Invalidating C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java...
 Invalidating (transitively) by inheritance from C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java...
 Initial set of included nodes: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
@@ -199,123 +475,32 @@ Invalidated by transitive inheritance dependency: Set(C:\Users\template\Grupo-6\
 The C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java source file has the following regular definitions changed:
 	vamos, sayHello.
 All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala: Set(sayHello)
 Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java
-The following modified names cause invalidation of C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala: Set(vamos, sayHello)
-The following modified names cause invalidation of C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala: Set(vamos, sayHello)
-New invalidations:
-	Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
-Initial set of included nodes: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Login.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Profile.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\index.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Secured.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Paciente.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
-Read from stdout: Compiling 2 Scala sources and 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Compiling 2 Scala sources and 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Running cached compiler 1b3ea52f, interfacing (CompilerInterface) with Scala compiler version 2.11.1
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\classes;C:\Users\template\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar
-	-classpath
-	C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes;C:\Users\template\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\template\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\template\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\template\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\template\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\io.netty\netty\bundles\netty-3.9.3.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\template\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\template\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\template\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\template\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\template\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\template\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\template\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\template\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar;C:\Users\template\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\template\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\template\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\template\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\template\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\template\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ebean_2.11\jars\play-java-ebean_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-3.3.4.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-3.2.2.jar;C:\Users\template\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\jars\play-java-jpa_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\template\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-entitymanager\jars\hibernate-entitymanager-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-core\jars\hibernate-core-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\antlr\antlr\jars\antlr-2.7.6.jar;C:\Users\template\.ivy2\cache\commons-collections\commons-collections\jars\commons-collections-3.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-commons-annotations\jars\hibernate-commons-annotations-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\cglib\cglib\jars\cglib-2.2.jar;C:\Users\template\.ivy2\cache\asm\asm\jars\asm-3.1.jar;C:\Users\template\.ivy2\cache\javassist\javassist\jars\javassist-3.12.0.GA.jar;C:\Users\template\.ivy2\cache\org.postgresql\postgresql\jars\postgresql-9.2-1003-jdbc4.jar;C:\Users\template\.ivy2\cache\org.webjars\bootstrap\jars\bootstrap-3.0.2.jar;C:\Users\template\.ivy2\cache\org.webjars\jquery\jars\jquery-1.9.0.jar;C:\Users\template\.ivy2\cache\org.codehaus.jackson\jackson-core-asl\jars\jackson-core-asl-1.9.13.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-java_2.11\jars\deadbolt-java_2.11-2.3.3.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-core_2.11\jars\deadbolt-core_2.11-2.3.3.jar
-Scala compilation took 22.261818401 s
-Attempting to call com.sun.tools.javac.api.JavacTool@28f3a7fe directly...
-Java compilation took 1.638811497 s
-Java analysis took 0.432241108 s
-Java compile + analysis took 2.128412828 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 34 s, completed 27/04/2015 01:41:09 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/template/Grupo-6/Grupo-6/arquisoft-app/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@6ad012b1, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\application.conf,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\application.conf)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\META-INF,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\META-INF)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\play.plugins,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\play.plugins)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\routes,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\routes)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\META-INF\persistence.xml,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\META-INF\persistence.xml)
-Total time: 4 s, completed 27/04/2015 01:41:32 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/template/Grupo-6/Grupo-6/arquisoft-app/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@5e2e0e95, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@758c3481 directly...
-Java compilation took 1.125073858 s
-Java analysis took 0.401908481 s
-Java compile + analysis took 1.566743888 s
-Invalidating C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java...
-Invalidating (transitively) by inheritance from C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java...
-Initial set of included nodes: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-The C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java source file has the following regular definitions changed:
+The following modified names cause invalidation of C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala: Set(sayHello)
+Invalidating C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala...
+Invalidating (transitively) by inheritance from C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala...
+Initial set of included nodes: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala)
+Invalidated by transitive inheritance dependency: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala)
+The C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, apply, ==, clone, copy, toString, !=, verpaciente, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+Invalidating C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala...
+Invalidating (transitively) by inheritance from C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala...
+Initial set of included nodes: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+Invalidated by transitive inheritance dependency: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+The C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala source file has the following regular definitions changed:
 	vamos.
 All member reference dependencies will be considered within this context.
 Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java
-The following modified names cause invalidation of C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala: Set(vamos)
-The following modified names cause invalidation of C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala: Set(vamos)
+None of the modified names appears in C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala. This dependency is not being considered for invalidation.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Secured.java
+None of the modified names appears in C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Login.template.scala. This dependency is not being considered for invalidation.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java
+None of the modified names appears in C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Paciente.template.scala. This dependency is not being considered for invalidation.
 New invalidations:
-	Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
-Initial set of included nodes: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+	Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Secured.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java)
+Initial set of included nodes: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Secured.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java)
 Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala
 Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
 Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
@@ -323,21 +508,21 @@ Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twir
 Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Profile.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
 Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\index.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
 Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Secured.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
+Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\PacienteController.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Secured.java
 Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java
 Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Paciente.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java
 Previously invalidated, but (transitively) depend on new invalidations:
-	Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
-Read from stdout: Compiling 2 Scala sources and 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Compiling 2 Scala sources and 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
+	Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Secured.java)
+Read from stdout: Compiling 2 Scala sources and 3 Java sources to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
+Compiling 2 Scala sources and 3 Java sources to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
 Getting compiler-interface from component compiler for Scala 2.11.1
 Other repositories:
 Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.1
 Other repositories:
 Default repositories:
-Running cached compiler 40095cce, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Running cached compiler 3776c784, interfacing (CompilerInterface) with Scala compiler version 2.11.1
 Calling Scala compiler with arguments  (CompilerInterface):
 	-deprecation
 	-unchecked
@@ -347,29 +532,23 @@ Calling Scala compiler with arguments  (CompilerInterface):
 	C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\classes;C:\Users\template\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar
 	-classpath
 	C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes;C:\Users\template\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\template\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\template\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\template\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\template\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\io.netty\netty\bundles\netty-3.9.3.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\template\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\template\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\template\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\template\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\template\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\template\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\template\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\template\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar;C:\Users\template\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\template\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\template\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\template\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\template\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\template\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ebean_2.11\jars\play-java-ebean_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-3.3.4.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-3.2.2.jar;C:\Users\template\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\jars\play-java-jpa_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\template\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-entitymanager\jars\hibernate-entitymanager-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-core\jars\hibernate-core-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\antlr\antlr\jars\antlr-2.7.6.jar;C:\Users\template\.ivy2\cache\commons-collections\commons-collections\jars\commons-collections-3.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-commons-annotations\jars\hibernate-commons-annotations-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\cglib\cglib\jars\cglib-2.2.jar;C:\Users\template\.ivy2\cache\asm\asm\jars\asm-3.1.jar;C:\Users\template\.ivy2\cache\javassist\javassist\jars\javassist-3.12.0.GA.jar;C:\Users\template\.ivy2\cache\org.postgresql\postgresql\jars\postgresql-9.2-1003-jdbc4.jar;C:\Users\template\.ivy2\cache\org.webjars\bootstrap\jars\bootstrap-3.0.2.jar;C:\Users\template\.ivy2\cache\org.webjars\jquery\jars\jquery-1.9.0.jar;C:\Users\template\.ivy2\cache\org.codehaus.jackson\jackson-core-asl\jars\jackson-core-asl-1.9.13.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-java_2.11\jars\deadbolt-java_2.11-2.3.3.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-core_2.11\jars\deadbolt-core_2.11-2.3.3.jar
-Scala compilation took 6.376380378 s
-Attempting to call com.sun.tools.javac.api.JavacTool@758c3481 directly...
-Java compilation took 0.984196176 s
-Java analysis took 0.574719552 s
-Java compile + analysis took 1.593854805 s
+Scala compilation took 6.341376486 s
+Attempting to call com.sun.tools.javac.api.JavacTool@549dc607 directly...
+Java compilation took 1.582480104 s
+Java analysis took 0.54235685 s
+Java compile + analysis took 2.176852016 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\application.conf,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\application.conf)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\META-INF,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\META-INF)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\play.plugins,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\play.plugins)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\routes,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\routes)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\META-INF\persistence.xml,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\META-INF\persistence.xml)
-Total time: 15 s, completed 27/04/2015 01:42:00 PM
+Total time: 24 s, completed 11/05/2015 06:41:19 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@4f68f417, check cycles: false
+> {file:/C:/Users/template/Grupo-6/Grupo-6/arquisoft-app/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@18d80bd8, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -386,69 +565,43 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 2 s, completed 27/04/2015 01:42:02 PM
+Copy resource mappings: 
+	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\application.conf,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\application.conf)
+	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\META-INF,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\META-INF)
+	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\play.plugins,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\play.plugins)
+	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\routes,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\routes)
+	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\META-INF\persistence.xml,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\META-INF\persistence.xml)
+Total time: 3 s, completed 11/05/2015 06:41:35 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@65237fa3, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@10a234cc, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
+	modified: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
+Initial directly invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
+All initially invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Pacientes.template.scala)
 
-Read from stdout: Compiling 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@d259976 directly...
-Java compilation took 1.446385014 s
-Java analysis took 0.445187379 s
-Java compile + analysis took 1.950456062 s
-Invalidating C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java...
-Invalidating (transitively) by inheritance from C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java...
-Initial set of included nodes: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-The C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java source file has the following regular definitions changed:
-	vamos.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java
-The following modified names cause invalidation of C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala: Set(vamos)
-The following modified names cause invalidation of C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala: Set(vamos)
-New invalidations:
-	Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
-Initial set of included nodes: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Login.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Profile.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\index.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Secured.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Paciente.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
-Read from stdout: Compiling 2 Scala sources and 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Compiling 2 Scala sources and 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
+Read from stdout: Compiling 1 Scala source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
 Getting compiler-interface from component compiler for Scala 2.11.1
 Other repositories:
 Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.1
 Other repositories:
 Default repositories:
-Running cached compiler 23095a50, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Running cached compiler 72e50bec, interfacing (CompilerInterface) with Scala compiler version 2.11.1
 Calling Scala compiler with arguments  (CompilerInterface):
 	-deprecation
 	-unchecked
@@ -458,23 +611,27 @@ Calling Scala compiler with arguments  (CompilerInterface):
 	C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\classes;C:\Users\template\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar
 	-classpath
 	C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes;C:\Users\template\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\template\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\template\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\template\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\template\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\io.netty\netty\bundles\netty-3.9.3.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\template\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\template\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\template\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\template\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\template\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\template\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\template\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\template\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar;C:\Users\template\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\template\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\template\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\template\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\template\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\template\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ebean_2.11\jars\play-java-ebean_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-3.3.4.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-3.2.2.jar;C:\Users\template\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\jars\play-java-jpa_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\template\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-entitymanager\jars\hibernate-entitymanager-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-core\jars\hibernate-core-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\antlr\antlr\jars\antlr-2.7.6.jar;C:\Users\template\.ivy2\cache\commons-collections\commons-collections\jars\commons-collections-3.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-commons-annotations\jars\hibernate-commons-annotations-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\cglib\cglib\jars\cglib-2.2.jar;C:\Users\template\.ivy2\cache\asm\asm\jars\asm-3.1.jar;C:\Users\template\.ivy2\cache\javassist\javassist\jars\javassist-3.12.0.GA.jar;C:\Users\template\.ivy2\cache\org.postgresql\postgresql\jars\postgresql-9.2-1003-jdbc4.jar;C:\Users\template\.ivy2\cache\org.webjars\bootstrap\jars\bootstrap-3.0.2.jar;C:\Users\template\.ivy2\cache\org.webjars\jquery\jars\jquery-1.9.0.jar;C:\Users\template\.ivy2\cache\org.codehaus.jackson\jackson-core-asl\jars\jackson-core-asl-1.9.13.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-java_2.11\jars\deadbolt-java_2.11-2.3.3.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-core_2.11\jars\deadbolt-core_2.11-2.3.3.jar
-Scala compilation took 6.904864097 s
-Attempting to call com.sun.tools.javac.api.JavacTool@d259976 directly...
-Java compilation took 0.707517225 s
-Java analysis took 0.285054734 s
-Java compile + analysis took 1.043816743 s
+Read from stdout: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\views\Pacientes.scala.html:1: imported `Paciente' is permanently hidden by definition of object Paciente in package html
+C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\views\Pacientes.scala.html:1: imported `Paciente' is permanently hidden by definition of object Paciente in package html
+Read from stdout: @* Pacientes Template File *@
+@* Pacientes Template File *@
+Read from stdout: ^
+^
+Read from stdout: one warning found
+one warning found
+Scala compilation took 2.477885666 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 14 s, completed 27/04/2015 02:17:07 PM
+Total time: 7 s, completed 11/05/2015 06:43:24 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/template/Grupo-6/Grupo-6/arquisoft-app/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@af3f91, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@3e4d53b3, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -497,256 +654,6 @@ Copy resource mappings:
 	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\play.plugins,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\play.plugins)
 	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\routes,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\routes)
 	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\META-INF\persistence.xml,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\META-INF\persistence.xml)
-Total time: 3 s, completed 27/04/2015 02:18:07 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@7f5d6c32, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@22566eb3 directly...
-Java compilation took 1.432072094 s
-Java analysis took 0.376918504 s
-Java compile + analysis took 1.868178846 s
-Invalidating C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java...
-Invalidating (transitively) by inheritance from C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java...
-Initial set of included nodes: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-The C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java source file has the following regular definitions changed:
-	vamos.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java
-The following modified names cause invalidation of C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala: Set(vamos)
-The following modified names cause invalidation of C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala: Set(vamos)
-New invalidations:
-	Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
-Initial set of included nodes: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Login.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Profile.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\index.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Secured.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Paciente.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
-Read from stdout: Compiling 2 Scala sources and 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Compiling 2 Scala sources and 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Running cached compiler 5aa7d904, interfacing (CompilerInterface) with Scala compiler version 2.11.1
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\classes;C:\Users\template\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar
-	-classpath
-	C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes;C:\Users\template\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\template\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\template\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\template\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\template\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\io.netty\netty\bundles\netty-3.9.3.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\template\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\template\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\template\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\template\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\template\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\template\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\template\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\template\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar;C:\Users\template\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\template\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\template\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\template\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\template\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\template\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ebean_2.11\jars\play-java-ebean_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-3.3.4.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-3.2.2.jar;C:\Users\template\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\jars\play-java-jpa_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\template\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-entitymanager\jars\hibernate-entitymanager-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-core\jars\hibernate-core-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\antlr\antlr\jars\antlr-2.7.6.jar;C:\Users\template\.ivy2\cache\commons-collections\commons-collections\jars\commons-collections-3.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-commons-annotations\jars\hibernate-commons-annotations-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\cglib\cglib\jars\cglib-2.2.jar;C:\Users\template\.ivy2\cache\asm\asm\jars\asm-3.1.jar;C:\Users\template\.ivy2\cache\javassist\javassist\jars\javassist-3.12.0.GA.jar;C:\Users\template\.ivy2\cache\org.postgresql\postgresql\jars\postgresql-9.2-1003-jdbc4.jar;C:\Users\template\.ivy2\cache\org.webjars\bootstrap\jars\bootstrap-3.0.2.jar;C:\Users\template\.ivy2\cache\org.webjars\jquery\jars\jquery-1.9.0.jar;C:\Users\template\.ivy2\cache\org.codehaus.jackson\jackson-core-asl\jars\jackson-core-asl-1.9.13.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-java_2.11\jars\deadbolt-java_2.11-2.3.3.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-core_2.11\jars\deadbolt-core_2.11-2.3.3.jar
-Scala compilation took 7.245650705 s
-Attempting to call com.sun.tools.javac.api.JavacTool@22566eb3 directly...
-Java compilation took 0.631613655 s
-Java analysis took 0.231292035 s
-Java compile + analysis took 0.88854624 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 13 s, completed 27/04/2015 02:22:59 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/template/Grupo-6/Grupo-6/arquisoft-app/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@4fe99cf2, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\application.conf,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\application.conf)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\META-INF,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\META-INF)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\play.plugins,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\play.plugins)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\routes,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\routes)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\META-INF\persistence.xml,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\META-INF\persistence.xml)
-Total time: 3 s, completed 27/04/2015 02:23:07 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/template/Grupo-6/Grupo-6/arquisoft-app/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@1fbd7a3a, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\application.conf,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\application.conf)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\META-INF,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\META-INF)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\play.plugins,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\play.plugins)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\routes,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\routes)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\META-INF\persistence.xml,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\META-INF\persistence.xml)
-Total time: 3 s, completed 27/04/2015 02:47:57 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@5222d486, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@2b318b97 directly...
-Java compilation took 1.006932096 s
-Java analysis took 0.39524723 s
-Java compile + analysis took 1.429577291 s
-Invalidating C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java...
-Invalidating (transitively) by inheritance from C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java...
-Initial set of included nodes: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-The C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java source file has the following regular definitions changed:
-	vamos, sayHello.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java
-The following modified names cause invalidation of C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala: Set(vamos, sayHello)
-The following modified names cause invalidation of C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala: Set(vamos, sayHello)
-New invalidations:
-	Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
-Initial set of included nodes: Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Login.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Profile.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\index.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Secured.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\verpaciente.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java
-Including C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\twirl\main\views\html\Paciente.template.scala by C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\controllers\routes.java
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\app\controllers\Application.java)
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_routing.scala, C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\src_managed\main\routes_reverseRouting.scala)
-Read from stdout: Compiling 2 Scala sources and 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Compiling 2 Scala sources and 1 Java source to C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Running cached compiler 6da4a5de, interfacing (CompilerInterface) with Scala compiler version 2.11.1
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files\Java\jdk1.7.0_71\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_71\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_71\jre\classes;C:\Users\template\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar
-	-classpath
-	C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes;C:\Users\template\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\template\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\template\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\template\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\template\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\template\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\template\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\template\.ivy2\cache\io.netty\netty\bundles\netty-3.9.3.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\template\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\template\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\template\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\template\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\template\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\template\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\template\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\template\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\template\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar;C:\Users\template\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\template\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar;C:\Users\template\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\template\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\template\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\template\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\template\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\template\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ebean_2.11\jars\play-java-ebean_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-3.3.4.jar;C:\Users\template\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-3.2.2.jar;C:\Users\template\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\jars\play-java-jpa_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.8.jar;C:\Users\template\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\template\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\template\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\template\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-entitymanager\jars\hibernate-entitymanager-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-core\jars\hibernate-core-3.6.9.Final.jar;C:\Users\template\.ivy2\cache\antlr\antlr\jars\antlr-2.7.6.jar;C:\Users\template\.ivy2\cache\commons-collections\commons-collections\jars\commons-collections-3.1.jar;C:\Users\template\.ivy2\cache\org.hibernate\hibernate-commons-annotations\jars\hibernate-commons-annotations-3.2.0.Final.jar;C:\Users\template\.ivy2\cache\cglib\cglib\jars\cglib-2.2.jar;C:\Users\template\.ivy2\cache\asm\asm\jars\asm-3.1.jar;C:\Users\template\.ivy2\cache\javassist\javassist\jars\javassist-3.12.0.GA.jar;C:\Users\template\.ivy2\cache\org.postgresql\postgresql\jars\postgresql-9.2-1003-jdbc4.jar;C:\Users\template\.ivy2\cache\org.webjars\bootstrap\jars\bootstrap-3.0.2.jar;C:\Users\template\.ivy2\cache\org.webjars\jquery\jars\jquery-1.9.0.jar;C:\Users\template\.ivy2\cache\org.codehaus.jackson\jackson-core-asl\jars\jackson-core-asl-1.9.13.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-java_2.11\jars\deadbolt-java_2.11-2.3.3.jar;C:\Users\template\.ivy2\cache\be.objectify\deadbolt-core_2.11\jars\deadbolt-core_2.11-2.3.3.jar
-Scala compilation took 6.727167557 s
-Attempting to call com.sun.tools.javac.api.JavacTool@2b318b97 directly...
-Java compilation took 1.255251995 s
-Java analysis took 0.240431884 s
-Java compile + analysis took 1.544420731 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 13 s, completed 27/04/2015 03:04:06 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/template/Grupo-6/Grupo-6/arquisoft-app/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@69d8715a, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\application.conf,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\application.conf)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\META-INF,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\META-INF)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\play.plugins,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\play.plugins)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\routes,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\routes)
-	(C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\conf\META-INF\persistence.xml,C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\target\scala-2.11\classes\META-INF\persistence.xml)
-Total time: 3 s, completed 27/04/2015 03:04:33 PM
+Total time: 3 s, completed 11/05/2015 06:44:02 PM
 > server-post-command-cleanup
 > server-handle-next-server-request

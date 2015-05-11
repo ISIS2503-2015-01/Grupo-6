@@ -4,18 +4,13 @@ package controllers;
 import java.util.Date;
 import java.util.List;
 
-
-
-
-
-
-
-
 import javax.persistence.Query;
 
 import be.objectify.deadbolt.java.actions.Group;
 import be.objectify.deadbolt.java.actions.Restrict;
+import model.Doctor;
 import model.Paciente;
+import views.html.Pacientes;
 import play.db.jpa.*;
 import play.libs.Json;
 import play.mvc.Controller;
@@ -77,7 +72,13 @@ public class PacienteController extends Controller
 	{
 		Query q = JPA.em().createQuery("SELECT p FROM Paciente p");
 		List<Paciente> lista = q.getResultList();
-		return Results.ok(Json.toJson(lista));
+		
+		Doctor d = null;
+		if(Secured.isLoggedIn(ctx()))
+			d=JPA.em().find(Doctor.class, Secured.getUser(ctx()));
+		
+		return ok(Pacientes.render("Pacientes", Secured.isLoggedIn(ctx()), Secured.getUserInfo(ctx(), d), lista));
+
 	}
 	
 	@Restrict({@Group("admin")})
