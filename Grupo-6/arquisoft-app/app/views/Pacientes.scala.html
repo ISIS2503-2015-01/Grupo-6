@@ -62,7 +62,7 @@
        <h2>Pacientes</h2>
        <br><br>
        
-       <table class="table table-striped">
+       <table id="tabla" class="table table-striped">
   		
 			  		<thead>
 			    <tr>
@@ -70,6 +70,10 @@
 			      <th>Nombre</th>
 			      <th>E-mail</th>
 			      <th>Apellido</th>
+			      <th>Fecha de Nacimiento</th>
+			      <th>Genero</th>
+			      <th>Telefono</th>
+			      <th>Episodios de Dolor</th>
 			    </tr>
 			  </thead>
 		
@@ -85,10 +89,25 @@
 			       <td><strong>
 			       @param.getEmail()</strong>
 			      	</td>
-			      	
+			      	<td><strong>
+			       @param.getApellido()</strong>
+			      	</td>
+			      	<td><strong>
+			       @param.getFechaNacimiento()</strong>
+			      	</td>
+			      	<td><strong>
+			       @param.getGenero()</strong>
+			      	</td>
+			      	<td><strong>
+			       @param.getTelefono()</strong>
+			      	</td>
+			      	<td><strong>
+			       <a href="paciente/@param.getIdDocumento()/episodio">Ver Episodios</a></strong>
+			      	</td>
 			      	<td>
 			       </tr>
 			   		}
+
 			  	</tbody>
 							
 		       

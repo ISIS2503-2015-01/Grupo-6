@@ -1,5 +1,6 @@
 package controllers;
 
+import model.Doctor;
 import model.EpisodioDeDolor;
 import model.Paciente;
 
@@ -18,7 +19,9 @@ import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 import play.mvc.Results;
+import views.html.Pacientes;
 import views.html.index;
+import views.html.EpisodiosDeDolor;
 public class EpisodioController extends Controller
 {
 	static Form<EpisodioDeDolor> episodioDeDolor = Form.form(EpisodioDeDolor.class);
@@ -56,8 +59,15 @@ public class EpisodioController extends Controller
 	@Transactional
 	public static Result getEpisodios(Long id)
 	{
-		EpisodioDeDolor q = JPA.em().find(EpisodioDeDolor.class, id);
-		return Results.ok(Json.toJson(q));
+		Query q = JPA.em().createQuery("SELECT p FROM EpisodioDeDolor p WHERE pacienteId = '"+id+"'");
+		List<EpisodioDeDolor> lista = q.getResultList();
+		
+		Doctor d = null;
+		if(Secured.isLoggedIn(ctx()))
+			d=JPA.em().find(Doctor.class, Secured.getUser(ctx()));
+		
+		return ok(EpisodiosDeDolor.render("Episodios De Dolor", Secured.isLoggedIn(ctx()), Secured.getUserInfo(ctx(), d), lista));
+
 	}
 	
 	@Restrict({@Group("admin")})
