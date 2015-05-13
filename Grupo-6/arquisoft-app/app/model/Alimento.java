@@ -21,7 +21,7 @@ public class Alimento {
     	this.nombre = nombre;
     	this.tipo = tipo;
     	this.cantidad = cantidad;
-    	this.catalizadorAsociadoId = catalizadorAsociadoId;
+    	this.setCatalizadorAsociadoId(catalizadorAsociadoId);
     	
     }
     
@@ -71,6 +71,14 @@ public class Alimento {
 	 */
 	public void setCantidad(int cantidad) {
 		this.cantidad = cantidad;
+	}
+
+	public Long getCatalizadorAsociadoId() {
+		return catalizadorAsociadoId;
+	}
+
+	public void setCatalizadorAsociadoId(Long catalizadorAsociadoId) {
+		this.catalizadorAsociadoId = catalizadorAsociadoId;
 	}
     
     

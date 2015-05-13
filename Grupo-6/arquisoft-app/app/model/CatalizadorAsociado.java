@@ -26,7 +26,7 @@ public class CatalizadorAsociado {
     	
     	this.actividadFisica = actividadFisica;
     	this.estadoTiempo = estadoTiempo;
-    	this.episodioDeDolorId = episodioDeDolorId;
+    	this.setEpisodioDeDolorId(episodioDeDolorId);
     	
     }
     /**
@@ -59,6 +59,12 @@ public class CatalizadorAsociado {
 	 */
 	public void setEstadoTiempo(String estadoTiempo) {
 		this.estadoTiempo = estadoTiempo;
+	}
+	public Long getEpisodioDeDolorId() {
+		return episodioDeDolorId;
+	}
+	public void setEpisodioDeDolorId(Long episodioDeDolorId) {
+		this.episodioDeDolorId = episodioDeDolorId;
 	}
     
     

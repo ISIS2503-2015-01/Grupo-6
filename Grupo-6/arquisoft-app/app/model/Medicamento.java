@@ -20,7 +20,7 @@ public class Medicamento {
     	this.nombre = nombre ;
     	this.dosis = dosis;
     	this.frecuencia = frecuencia;
-    	this.episodioDeDolorId = episodioDeDolorId;
+    	this.setEpisodioDeDolorId(episodioDeDolorId);
     }
     
     /**
@@ -69,6 +69,14 @@ public class Medicamento {
 	 */
 	public void setFrecuencia(int frecuencia) {
 		this.frecuencia = frecuencia;
+	}
+
+	public Long getEpisodioDeDolorId() {
+		return episodioDeDolorId;
+	}
+
+	public void setEpisodioDeDolorId(Long episodioDeDolorId) {
+		this.episodioDeDolorId = episodioDeDolorId;
 	}
     
     

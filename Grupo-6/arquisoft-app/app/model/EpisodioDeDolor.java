@@ -1,6 +1,4 @@
 package model;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -40,7 +38,7 @@ public class EpisodioDeDolor {
 		this.intensidad = intensidad;
 		this.horasDeSueno = horasDeSueno;
 		this.lugar = lugar;
-		this.pacienteId = pacienteId;
+		this.setPacienteId(pacienteId);
 		
 	}
 
@@ -106,6 +104,14 @@ public class EpisodioDeDolor {
 	 */
 	public void setLugar(String lugar) {
 		this.lugar = lugar;
+	}
+
+	public Long getPacienteId() {
+		return pacienteId;
+	}
+
+	public void setPacienteId(Long pacienteId) {
+		this.pacienteId = pacienteId;
 	}
 
 

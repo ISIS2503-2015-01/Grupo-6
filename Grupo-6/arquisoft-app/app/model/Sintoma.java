@@ -17,7 +17,7 @@ public class Sintoma {
    	public Sintoma(String descripcion, Long episodioDeDolorId){
    		
    		this.descripcion = descripcion;
-   		this.episodioDeDolorId = episodioDeDolorId;
+   		this.setEpisodioDeDolorId(episodioDeDolorId);
    	}
    	
    	/**
@@ -34,6 +34,14 @@ public class Sintoma {
 	 */
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
+	}
+
+	public Long getEpisodioDeDolorId() {
+		return episodioDeDolorId;
+	}
+
+	public void setEpisodioDeDolorId(Long episodioDeDolorId) {
+		this.episodioDeDolorId = episodioDeDolorId;
 	}
    	
    	
