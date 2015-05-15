@@ -60,10 +60,10 @@ DELETE		/doctor/:id					controllers.DoctorController.deleteDoctor(id: String)
 POST    /episodio					controllers.EpisodioController.createEpisodio()
 
 #Ver lista de episodios
-GET		/paciente/:id/episodio		controllers.EpisodioController.getEpisodios(id: Long)
+GET		/paciente/:id/episodios		controllers.EpisodioController.getEpisodios(id: Long)
 
 #Ver episodio por id
-GET		/paciente/:id1/episodio/:id2	controllers.EpisodioController.getEpisodio(id2: Long, id1: Long)
+GET		/paciente/episodio/:id2	controllers.EpisodioController.getEpisodio(id2: Long)
 
 #Actualizar a un episodio
 PUT		/episodio/:id				controllers.EpisodioController.updateEpisodio(id: Long)

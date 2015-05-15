@@ -1,8 +1,11 @@
 package controllers;
 
+import model.CatalizadorAsociado;
 import model.Doctor;
 import model.EpisodioDeDolor;
+import model.Medicamento;
 import model.Paciente;
+import model.Sintoma;
 
 import javax.persistence.Query;
 
@@ -19,6 +22,7 @@ import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 import play.mvc.Results;
+import views.html.episodio;
 import views.html.Pacientes;
 import views.html.index;
 import views.html.EpisodiosDeDolor;
@@ -66,20 +70,41 @@ public class EpisodioController extends Controller
 		if(Secured.isLoggedIn(ctx()))
 			d=JPA.em().find(Doctor.class, Secured.getUser(ctx()));
 		
+		
+		
 		return ok(EpisodiosDeDolor.render("Episodios De Dolor", Secured.isLoggedIn(ctx()), Secured.getUserInfo(ctx(), d), lista));
+		
+		
 
 	}
 	
 	@Restrict({@Group("admin")})
 	@Transactional
-	public static Result getEpisodio(Long id, Long id1)
+	public static Result getEpisodio(Long id)
 	{
 		
-		Query q = JPA.em().createQuery("SELECT e FROM EpisodioDeDolor e WHERE e.pacienteId =" + id);
-		List<EpisodioDeDolor> edd = q.getResultList();
-	//    return Results.ok(Json.toJson(edd));
-		return Results.ok(Json.toJson(q));
-}
+		Query q = JPA.em().createQuery("SELECT e FROM EpisodioDeDolor e WHERE e.id =" + id);
+		List<EpisodioDeDolor> epi = q.getResultList();
+		
+		
+		
+		
+		Query c = JPA.em().createQuery("SELECT p FROM CatalizadorAsociado p WHERE episodioDeDolorId = '"+id+"'");
+		List<CatalizadorAsociado> cata = c.getResultList();
+		
+		Query s = JPA.em().createQuery("SELECT p FROM Sintoma p WHERE episodioDeDolorId = '"+id+"'");
+		List<Sintoma> sint = s.getResultList();
+		
+		Query m = JPA.em().createQuery("SELECT p FROM Medicamento p WHERE episodioDeDolorId = '"+id+"'");
+		List<Medicamento> med = m.getResultList();
+		
+		Doctor d = null;
+		if(Secured.isLoggedIn(ctx()))
+			d=JPA.em().find(Doctor.class, Secured.getUser(ctx()));
+		
+		return ok(episodio.render("Episodio" + id, Secured.isLoggedIn(ctx()), Secured.getUserInfo(ctx(), d), epi,cata,sint,med));
+
+	}
 
 	@Restrict({@Group("admin")})
 	@Transactional

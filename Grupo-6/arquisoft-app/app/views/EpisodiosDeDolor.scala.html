@@ -1,14 +1,105 @@
-@* Pacientes Template File *@
-@import model.Doctor
 @import model.EpisodioDeDolor
+@import model.Doctor
 @(page: String, isLoggedIn: Boolean, userInfo: Doctor, param:List[EpisodioDeDolor])
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
 
-</body>
-</html>
+@import bootstrap3._
+<head>
+        <title>@page (Episodios de Dolor)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        
+        <!--  Load site-specific customizations after bootstrap. -->
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+        <![endif]-->
+        
+        <!--bootstrap css-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="shortcut icon"  href="@routes.Assets.at("images/cplogo.png")" />
+    <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("css/bootstrap.min.css")">
+	<link rel="stylesheet" href="@routes.Assets.at("css/skel.css")" />
+	<link rel="stylesheet" href="@routes.Assets.at("css/style.css")" />
+	<link rel="stylesheet" href="@routes.Assets.at("css/style-xlarge.css")" />    
+    
+    
+    
+     <!-- Load jQuery JS -->
+   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <!-- Load jQuery UI Main JS  -->
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(
+  
+  /* This is the function that will get executed after the DOM is fully loaded */
+  function () {
+    $( ".datepicker" ).datepicker({
+      changeMonth: true,//this option for allowing user to select month
+      changeYear: true //this option for allowing user to select from year range
+    });
+  }
+);
+		</script>
+    <script src="@routes.Assets.at("js/jquery.min.js")" type="text/javascript"></script>
+	<script src="@routes.Assets.at("js/jquery.dropotron.min.js")" type="text/javascript"></script>
+	<script src="@routes.Assets.at("js/skel.min.js")" type="text/javascript"></script>
+	<script src="@routes.Assets.at("js/skel-layers.min.js")" type="text/javascript"></script>
+	<script src="@routes.Assets.at("js/init.js")" type="text/javascript"></script>
+    <script src="@routes.Assets.at("js/hello.js")" type="text/javascript"></script>
+    <script type="text/javascript"src="@routes.Assets.at("js/bootstrap.min.js")"></script>
+    </head>
+
+ <div class="container">
+     <div class="row">
+       <div class="col-sm-10 col-sm-offset-1">
+       
+       <h2>Episodios De Dolor</h2>
+       <br><br>
+       
+       <table id="tabla" class="table table-striped">
+  		
+			  		<thead>
+			    <tr>
+			      <th>Fecha</th>
+			      <th>Intensidad</th>
+			      <th>Horas de Sueno</th>
+			      <th>Lugar</th>
+			      <th>Detalles</th>
+			      
+			    </tr>
+			  </thead>
+		
+				 <tbody>
+			       @for( (param,index) <- param.zipWithIndex ) {
+			       <tr>
+			       <td><strong>
+			       @param.getFecha()</strong>
+			       </td>
+			       <td><strong>
+			       @param.getIntensidad()</strong>
+			      	</td>
+			      	<td><strong>
+			       @param.getHorasDeSueno()</strong>
+			      	</td>
+			      	<td><strong>
+			       @param.getLugar()</strong>
+			      	</td>			      	<td></td>strong>
+			       <td><strong>
+			       <a href=paciente/episodio/@param.getId()">Ver Detalles</a></strong>
+			      	</td>
+			       </tr>
+			   		}
+
+			  	</tbody>
+							
+		       
+       </table>
+       
+       </div>
+     </div>
+   </div>   

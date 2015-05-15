@@ -22,7 +22,7 @@ public class EpisodioDeDolor {
 	private Long pacienteId;
 	
     @OneToMany(cascade=CascadeType.ALL, mappedBy="episodioDeDolorId")
-    private Collection<CatalizadorAsociado> catalalizadoAsociado = new ArrayList<CatalizadorAsociado>();
+    private Collection<CatalizadorAsociado> catalalizadorAsociado = new ArrayList<CatalizadorAsociado>();
     
     @OneToMany(cascade=CascadeType.ALL, mappedBy="episodioDeDolorId")
     private Collection<Sintoma> sintoma = new ArrayList<Sintoma>();
@@ -41,6 +41,12 @@ public class EpisodioDeDolor {
 		this.setPacienteId(pacienteId);
 		
 	}
+	
+	
+	public Long getId() {
+		return id;
+	}
+	
 
 	/**
 	 * Metodo que retorna el anio y dia del suceso del episodio

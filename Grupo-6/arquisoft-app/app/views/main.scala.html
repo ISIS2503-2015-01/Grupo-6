@@ -90,7 +90,7 @@
 				<div class="container">
 					<header>
 						<h2>Sistema de <br />
-							caracterización<br />
+							caracterizacion<br />
 						de migranias</h2>
 						
 						<ul class="actions">
@@ -98,17 +98,17 @@
 								
 							</ul>
 							
-						<p>Aquí puede revisar la lsita de todos los pacientes</p>
+						<p>Aqui puede revisar la lista de todos los pacientes</p>
 						<ul class="actions">
 								<li><a href="paciente" class="button special">Ver Pacientes</a></li>
 								
 							</ul>
 					</header>
 					
-					<form method="post" action="#">
+					<form method="get" action="#">
 						<div class="row uniform 100%">
 							<div class="12u$">
-							<input type="text" placeholder="# IdentificaciÃ³n" />
+							<input type="text" id="idpaciente" placeholder="# Identificacion" />
 						</div>
 						</div>
 						
@@ -119,12 +119,24 @@
 								<input type="text" class="datepicker" placeholder="Fecha de inicio"/>
 							</div>
 							<div class="6u$ 12u$(xsmall)">
-								<input type="text" class="datepicker" placeholder="Fecha de finalizaciÃ³n"/>
+								<input type="text" class="datepicker" placeholder="Fecha de finalizacion"/>
+							
+							
+							
 							</div>
 									
+									<script>
+									function myFunction(){
+									var a = "paciente/";
+									var b = "/episodios";
+									var c = a+ document.getElementById("idpaciente").value+b;
+									return c;
+									}
+									</script>
 									<div class="12u$">
 										<ul class="actions">
-											<li><a href="episodios.html" class="button special">Buscar</a></li>
+											<li><a href="" onclick="location.href=this.href+myFunction();return false;" class="button special">Buscar</a></li>
+											
 											
 										</ul>
 									</div>
