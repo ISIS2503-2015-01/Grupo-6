@@ -63,7 +63,7 @@
        <div class="col-sm-10 col-sm-offset-1">
        
        <h2>Informacion Episodio </h2>
-       <br><br>
+
        
        <table id="tabla" class="table table-striped">
   		
@@ -92,6 +92,45 @@
 			      	</td>
 			      	<td><strong>
 			       @param.getLugar()</strong>
+			      	</td>			      	<td></td><strong>
+			       <td><strong>
+			       </tr>
+			       }			  
+			  	</tbody>
+							
+		       
+       </table>
+       
+           <br><br>
+       <h2>Informacion Episodio </h2>
+          
+       <table id="tabla" class="table table-striped">
+  		
+			  		<thead>
+			    <tr>
+			      <th>Fecha</th>
+			      <th>Intensidad</th>
+			      <th>Horas de Sueno</th>
+			      <th>Lugar</th>
+
+			      
+			    </tr>
+			  </thead>
+		
+				 <tbody>
+				  @for( (cata,index) <- cata.zipWithIndex ) {
+			       <tr>
+			       <td><strong>
+			       @cata.getFecha()</strong>
+			       </td>
+			       <td><strong>
+			       @cata.getIntensidad()</strong>
+			      	</td>
+			      	<td><strong>
+			       @cata.getHorasDeSueno()</strong>
+			      	</td>
+			      	<td><strong>
+			       @cata.getLugar()</strong>
 			      	</td>			      	<td></td><strong>
 			       <td><strong>
 			       </tr>

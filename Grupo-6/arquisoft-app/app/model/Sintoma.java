@@ -24,6 +24,11 @@ public class Sintoma {
    	 * Metodo que retorna la descripcion del sintoma
    	 * @return descripcion
    	 */
+   	
+	public Long getId() {
+		return id;
+	}
+	
 	public String getDescripcion() {
 		return descripcion;
 	}

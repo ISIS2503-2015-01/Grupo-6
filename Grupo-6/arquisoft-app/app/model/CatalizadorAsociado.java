@@ -29,6 +29,12 @@ public class CatalizadorAsociado {
     	this.setEpisodioDeDolorId(episodioDeDolorId);
     	
     }
+    
+    
+	public Long getId() {
+		return id;
+	}
+    
     /**
      * Retorna la actividad fisica del paciente durante el episodio
      * @return actividadFisica
