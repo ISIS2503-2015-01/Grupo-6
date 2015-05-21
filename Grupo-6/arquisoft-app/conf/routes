@@ -65,6 +65,10 @@ GET		/paciente/:id/episodios		controllers.EpisodioController.getEpisodios(id: Lo
 #Ver episodio por id
 GET		/paciente/episodio/:id2	controllers.EpisodioController.getEpisodio(id2: Long)
 
+
+#Ver episodio por id
+#GET		/paciente/episodio/:id2/:fe	controllers.EpisodioController.getEpisodio(id2: Long, fecha1: String, fecha2: String)
+
 #Actualizar a un episodio
 PUT		/episodio/:id				controllers.EpisodioController.updateEpisodio(id: Long)
 

@@ -22,7 +22,12 @@ public class Application extends Controller {
 	@play.db.jpa.Transactional
     public static Result sayHello()
     {
-    	return ok(Paciente.render("Crear Paciente"));
+    	Doctor d=null;
+
+		if(Secured.isLoggedIn(ctx()))
+			d=JPA.em().find(Doctor.class, Secured.getUser(ctx()));
+
+		return ok(Paciente.render("Home", Secured.isLoggedIn(ctx()), Secured.getUserInfo(ctx(),d)));
     }
 	
 	
@@ -41,7 +46,7 @@ public class Application extends Controller {
 		if(Secured.isLoggedIn(ctx()))
 			d=JPA.em().find(Doctor.class, Secured.getUser(ctx()));
 
-		return ok(index.render("Home", false, Secured.getUserInfo(ctx(),d)));
+		return ok(index.render("Home", Secured.isLoggedIn(ctx()), Secured.getUserInfo(ctx(),d)));
 	}
 
 	/**
@@ -89,7 +94,7 @@ public class Application extends Controller {
 			// email/password OK, so now we set the session variable and only go to authenticated pages.
 			session().clear();
 			session("email", formData.get().email);
-			return redirect(routes.Application.profile());
+			return redirect(routes.Application.index());
 		}
 	}
 

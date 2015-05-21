@@ -67,11 +67,7 @@
         <a class="navbar-brand" href="/">CODE-PIMP</a>
       </div>
       <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-left">
-          @if(isLoggedIn) {
-            <li class="@("active".when(page == "Profile"))"><a href="@routes.Application.profile()">Perfil</a></li>
-          }
-        </ul>
+       
         <ul class="nav navbar-nav navbar-right">
           @if(isLoggedIn) {
             <li><p class="navbar-text">@userInfo.getId()</p></li>
@@ -116,10 +112,10 @@
 						<div class="row uniform 50%">
 							
 							<div class="6u 12u$(xsmall)">
-								<input type="text" class="datepicker" placeholder="Fecha de inicio"/>
+								<input type="text" id="fecha1" class="datepicker" placeholder="Fecha de inicio"/>
 							</div>
 							<div class="6u$ 12u$(xsmall)">
-								<input type="text" class="datepicker" placeholder="Fecha de finalizacion"/>
+								<input type="text" id="fecha2" class="datepicker" placeholder="Fecha de finalizacion"/>
 							
 							
 							
