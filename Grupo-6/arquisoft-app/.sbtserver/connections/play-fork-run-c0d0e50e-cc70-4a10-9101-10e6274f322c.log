@@ -1,0 +1,5 @@
+New log file opened at Thu May 21 02:43:34 COT 2015 by 267048@ISIS2503-33
+Sending msg to client play-fork-run-c0d0e50e-cc70-4a10-9101-10e6274f322c: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\.sbtserver\connections\master.log))
+Sending msg to client play-fork-run-c0d0e50e-cc70-4a10-9101-10e6274f322c: DetachedLogEvent(LogMessage(debug,sbt client logs are in: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\.sbtserver\connections\play-fork-run-c0d0e50e-cc70-4a10-9101-10e6274f322c.log))
+Sending msg to client play-fork-run-c0d0e50e-cc70-4a10-9101-10e6274f322c: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: C:\Users\template\Grupo-6\Grupo-6\arquisoft-app\.sbtserver\master.log))
+Reading next message from client.

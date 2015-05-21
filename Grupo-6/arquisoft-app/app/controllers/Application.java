@@ -18,7 +18,7 @@ public class Application extends Controller {
 //    }
 //    
 
-	@Restrict({@Group("admin")})
+
 	@play.db.jpa.Transactional
     public static Result sayHello()
     {
